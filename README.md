@@ -2,7 +2,7 @@
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Inherit Parent Meta</td></tr>
-<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core add-on to inherit parent featured and custom images for posts, pages, custom post types, categories, tags, and custom taxonomies.</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core add-on to inherit parent (grand-parent, etc.) featured and custom images for posts, pages, custom post types, categories, tags, and custom </td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.0.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 4.7</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 4.9.7</td></tr>
