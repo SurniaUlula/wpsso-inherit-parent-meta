@@ -10,7 +10,7 @@
  * Author URI: https://wpsso.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Description: WPSSO Core add-on to inherit parent (grand-parent, etc.) featured and custom images for posts, pages, custom post types, categories, tags, and custom taxonomies.
+ * Description: WPSSO Core add-on to inherit the featured image and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
  * Requires PHP: 5.4
  * Requires At Least: 3.8
  * Tested Up To: 4.9.7
