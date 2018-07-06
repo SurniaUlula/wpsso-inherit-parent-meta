@@ -19,9 +19,9 @@ WPSSO Core add-on to inherit the featured image and custom images from parents f
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-inherit-parent-meta/assets/icon-256x256.png"></p>
 
-**If no featured image has been selected** for a *post*, *page*, or *custom post type*, this add-on will assign the first featured image found from its parent, grand-parent, great-grand-parent, etc.
+**If no featured image has been selected** &mdash; for a *post*, *page*, or *custom post type* &mdash; this add-on will assign the first featured image found from its parent, grand-parent, great-grand-parent, etc.
 
-**If no custom Open Graph or Schema image has been selected** for a *post*, *page*, *custom post type*, *category, *tag*, or *custom taxonomy*, this add-on will assign the first custom image found from its parent, grand-parent, great-grand-parent, etc.
+**If no custom Open Graph or Schema image has been selected** &mdash; for a *post*, *page*, *custom post type*, *category*, *tag*, or *custom taxonomy* &mdash; this add-on will assign the first custom image found from its parent, grand-parent, great-grand-parent, etc.
 
 WordPress taxonomy terms (categories, tags, and custom taxonomies) do not offer a "featured image" option, so to assign an image to a term, select an image in the Document SSO (Social and Search Optimization) metabox when editing that term. This add-on will cascade those custom images to the children of that term, along with the children of those children, etc. Inherited featured or custom images are default values &mdash; you can always edit any child and select a different featured or custom image (which will then be inherited by its own children).
 
@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.0.0 (2018/07/05)**
+**Version 1.0.0 (2018/07/06)**
 
 * *New Features*
 	* Initial release.
@@ -81,5 +81,5 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.0.0 =
 
-(2018/07/05) Initial release.
+(2018/07/06) Initial release.
 
