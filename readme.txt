@@ -13,7 +13,7 @@ Requires At Least: 4.7
 Tested Up To: 4.9.7
 Stable Tag: 1.0.0
 
-WPSSO Core add-on to inherit parent (grand-parent, etc.) featured and custom images for posts, pages, custom post types, categories, tags, and custom taxonomies.
+WPSSO Core add-on to inherit the featured image and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
 
 == Description ==
 
