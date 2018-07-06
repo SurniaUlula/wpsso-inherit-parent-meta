@@ -17,6 +17,8 @@ WPSSO Core add-on to inherit parent (grand-parent, etc.) featured and custom ima
 
 == Description ==
 
+<p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-inherit-parent-meta/assets/icon-256x256.png"></p>
+
 If no featured image has been selected for a post, page, or custom post type, this add-on will assign the first featured image found from its parent, grand-parent, great-grand-parent, etc.
 
 If no custom Open Graph or Schema image has been selected for a post, page, custom post type, category, tag, or custom taxonomy, this add-on will assign the first custom image found from its parent, grand-parent, great-grand-parent, etc.
