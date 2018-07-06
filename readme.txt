@@ -1,4 +1,4 @@
-=== WPSSO Inherit Parent Meta ===
+=== WPSSO Inherit Parent Meta for Posts, Pages, Custom Post Types, Categories, Tags, and Custom Taxonomies ===
 Plugin Name: WPSSO Inherit Parent Meta
 Plugin Slug: wpsso-inherit-parent-meta
 Text Domain: wpsso-inherit-parent-meta
