@@ -17,15 +17,13 @@ WPSSO Core add-on to inherit parent (grand-parent, etc.) featured and custom ima
 
 == Description ==
 
-<p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-inherit-parent-meta/assets/icon-256x256.png"></p>
+If no featured image has been selected for a post, page, or custom post type, this add-on will assign the first featured image found from its parent, grand-parent, great-grand-parent, etc.
 
-If no featured image has been selected for post, page, or custom post type, this add-on will assign the first featured image found from its parent, grand-parent, great-grand-parent, etc.
-
-If no custom Open Graph or Schema image has been selected for post, page, custom post type, category, tag, or custom taxonomy, this add-on will assign the first custom image found from its parent, grand-parent, great-grand-parent, etc.
+If no custom Open Graph or Schema image has been selected for a post, page, custom post type, category, tag, or custom taxonomy, this add-on will assign the first custom image found from its parent, grand-parent, great-grand-parent, etc.
 
 The Inherit Parent Meta (aka WPSSO IPM) add-on makes no permanent changes &mdash; simply deactivate the plugin to disable the automatically inherited images. ;-)
 
-There are no plugin settings &mdash; simply *install* and *activate* the plugin.
+There is no add-on settings page for this plugin &mdash; simply *install* and *activate* the plugin.
 
 <h3>Coded for Performance</h3>
 
@@ -64,7 +62,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.0.0-dev.1 (TBD)**
+**Version 1.0.0 (2018/07/05)**
 
 * *New Features*
 	* Initial release.
@@ -77,7 +75,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.0.0-dev.1 =
+= 1.0.0 =
 
-(TBD) Initial release.
+(2018/07/05) Initial release.
 
