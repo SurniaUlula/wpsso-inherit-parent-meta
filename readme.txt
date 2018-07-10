@@ -68,12 +68,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.1.0-dev.1 (TBD)**
+**Version 1.1.0-dev.1 (2018/07/10)**
 
 * *New Features*
 	* None
 * *Improvements*
-	* None
+	* Added inheritance of Twitter Card custom image values.
 * *Bugfixes*
 	* None
 * *Developer Notes*
@@ -94,7 +94,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.1.0-dev.1 =
 
-(TBD) None.
+(2018/07/10) Added inheritance of Twitter Card custom image values.
 
 = 1.0.0 =
 
