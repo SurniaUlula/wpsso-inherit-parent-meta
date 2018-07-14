@@ -68,7 +68,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.1.0-rc.2 (2018/07/13)**
+**Version 1.1.0 (2018/07/14)**
 
 * *New Features*
 	* None
@@ -92,9 +92,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.1.0-rc.2 =
+= 1.1.0 =
 
-(2018/07/13) Added inheritance of Twitter Card custom image values.
+(2018/07/14) Added inheritance of Twitter Card custom image values.
 
 = 1.0.0 =
 
