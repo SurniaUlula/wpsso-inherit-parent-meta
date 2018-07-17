@@ -71,24 +71,24 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 **Version 1.1.0 (2018/07/14)**
 
 * *New Features*
-	* None
+	* None.
 * *Improvements*
 	* Added inheritance of Twitter Card custom image values.
 * *Bugfixes*
-	* None
+	* None.
 * *Developer Notes*
-	* None
+	* None.
 
 **Version 1.0.0 (2018/07/06)**
 
 * *New Features*
 	* Initial release.
 * *Improvements*
-	* None
+	* None.
 * *Bugfixes*
-	* None
+	* None.
 * *Developer Notes*
-	* None
+	* None.
 
 == Upgrade Notice ==
 
