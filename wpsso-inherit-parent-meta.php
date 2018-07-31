@@ -13,7 +13,7 @@
  * Description: WPSSO Core add-on to inherit the featured image and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
  * Requires PHP: 5.4
  * Requires At Least: 3.8
- * Tested Up To: 4.9.7
+ * Tested Up To: 4.9.8
  * Version: 1.2.0
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
