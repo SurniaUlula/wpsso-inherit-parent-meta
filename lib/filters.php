@@ -35,7 +35,7 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 
 			$this->p->util->add_plugin_filters( $this, array(
 				'get_md_defaults' => 2,
-				'get_md_options' => array(
+				'get_md_options'  => array(
 					'get_post_options' => 3,
 					'get_term_options' => 3,
 				),
