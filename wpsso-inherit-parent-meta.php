@@ -54,7 +54,7 @@ if ( ! class_exists( 'WpssoIpm' ) ) {
 			require_once ( dirname( __FILE__ ) . '/lib/config.php' );
 
 			WpssoIpmConfig::set_constants( __FILE__ );
-			WpssoIpmConfig::require_libs( __FILE__ );	// includes the register.php class library
+			WpssoIpmConfig::require_libs( __FILE__ );	// Includes the register.php class library.
 
 			$this->reg = new WpssoIpmRegister();		// activate, deactivate, uninstall hooks
 
