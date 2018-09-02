@@ -25,6 +25,7 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 		private $p;
 
 		public function __construct( &$plugin ) {
+
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {
