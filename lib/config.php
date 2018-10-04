@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 					'req' => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '4.14.1',
+						'min_version' => '4.15.0',
 					),
 					'img' => array(
 						'icons' => array(
@@ -86,9 +86,11 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 		);
 
 		public static function get_version( $add_slug = false ) {
-			$ext = 'wpssoipm';
+
+			$ext  = 'wpssoipm';
 			$info =& self::$cf['plugin'][$ext];
-			return $add_slug ? $info['slug'].'-'.$info['version'] : $info['version'];
+
+			return $add_slug ? $info['slug'] . '-' . $info['version'] : $info['version'];
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
@@ -107,8 +109,8 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 
 		public static function require_libs( $plugin_filepath ) {
 
-			require_once WPSSOIPM_PLUGINDIR.'lib/register.php';
-			require_once WPSSOIPM_PLUGINDIR.'lib/filters.php';
+			require_once WPSSOIPM_PLUGINDIR . 'lib/register.php';
+			require_once WPSSOIPM_PLUGINDIR . 'lib/filters.php';
 
 			add_filter( 'wpssoipm_load_lib', array( 'WpssoIpmConfig', 'load_lib' ), 10, 3 );
 		}
@@ -117,14 +119,14 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 
 			if ( false === $ret && ! empty( $filespec ) ) {
 
-				$filepath = WPSSOIPM_PLUGINDIR.'lib/'.$filespec.'.php';
+				$filepath = WPSSOIPM_PLUGINDIR . 'lib/' . $filespec . '.php';
 
 				if ( file_exists( $filepath ) ) {
 
 					require_once $filepath;
 
 					if ( empty( $classname ) ) {
-						return SucomUtil::sanitize_classname( 'wpssoipm' . $filespec, false );	// $underscore = false
+						return SucomUtil::sanitize_classname( 'wpssoipm' . $filespec, $allow_underscore = false );
 					} else {
 						return $classname;
 					}
