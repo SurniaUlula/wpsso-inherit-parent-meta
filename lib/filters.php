@@ -132,16 +132,16 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 			$local_cache[ $cache_index ] = array();
 
 			if ( $mod['is_post'] ) {
-				$parent_ids = array_reverse( get_ancestors( $mod['id'], $mod['post_type'], 'post_type' ) );
+				$parent_ids = array_reverse( get_ancestors( $mod[ 'id' ], $mod['post_type'], 'post_type' ) );
 			} elseif ( $mod['is_term'] ) {
-				$parent_ids = array_reverse( get_ancestors( $mod['id'], $mod['tax_slug'], 'taxonomy' ) );
+				$parent_ids = array_reverse( get_ancestors( $mod[ 'id' ], $mod['tax_slug'], 'taxonomy' ) );
 			} else {
 				$parent_ids = array();
 			}
 
 			foreach ( $parent_ids as $parent_id ) {
 
-				$meta_cache = $this->get_meta_cache( $parent_id, $mod['name'] );
+				$meta_cache = $this->get_meta_cache( $parent_id, $mod[ 'name' ] );
 
 				if ( isset( $meta_cache[ WPSSO_META_NAME ][0] ) ) {
 
