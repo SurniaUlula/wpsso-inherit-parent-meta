@@ -97,7 +97,7 @@ if ( ! class_exists( 'WpssoIpmRegister' ) ) {
 
 		private function activate_plugin() {
 
-			$version = WpssoIpmConfig::$cf[ 'plugin' ]['wpssoipm'][ 'version' ];	// only our config
+			$version = WpssoIpmConfig::$cf[ 'plugin' ][ 'wpssoipm' ][ 'version' ];	// only our config
 
 			if ( class_exists( 'WpssoUtil' ) ) {
 				WpssoUtil::save_all_times( 'wpssoipm', $version );
