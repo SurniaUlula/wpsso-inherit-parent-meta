@@ -131,9 +131,9 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 
 			$local_cache[ $cache_index ] = array();
 
-			if ( $mod['is_post'] ) {
-				$parent_ids = array_reverse( get_ancestors( $mod[ 'id' ], $mod['post_type'], 'post_type' ) );
-			} elseif ( $mod['is_term'] ) {
+			if ( $mod[ 'is_post' ] ) {
+				$parent_ids = array_reverse( get_ancestors( $mod[ 'id' ], $mod[ 'post_type' ], 'post_type' ) );
+			} elseif ( $mod[ 'is_term' ] ) {
 				$parent_ids = array_reverse( get_ancestors( $mod[ 'id' ], $mod['tax_slug'], 'taxonomy' ) );
 			} else {
 				$parent_ids = array();
