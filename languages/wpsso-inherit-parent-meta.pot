@@ -13,7 +13,7 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: lib/config-gettext-extract.php:3
+#: lib/gettext-config.php:6
 msgctxt "plugin description"
 msgid ""
 "WPSSO Core add-on to inherit the featured image and custom images from "
