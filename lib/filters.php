@@ -121,6 +121,7 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 		}
 
 		private function get_parent_opts( $mod ) {
+
 			static $local_cache = array();
 
 			$cache_index = SucomUtil::get_mod_salt( $mod );
