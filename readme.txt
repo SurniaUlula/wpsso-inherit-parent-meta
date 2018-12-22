@@ -19,7 +19,11 @@ WPSSO Core add-on to inherit featured and custom images from parents for posts, 
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-inherit-parent-meta/assets/icon-256x256.png"></p>
 
+= Featured Image =
+
 **If no featured image has been selected** &mdash; for a *post*, *page*, or *custom post type* &mdash; this add-on will assign the first featured image found from its parent, grand-parent, great-grand-parent, etc.
+
+= Custom Images =
 
 **If no custom Open Graph or Schema image has been selected** &mdash; for a *post*, *page*, *custom post type*, *category*, *tag*, or *custom taxonomy* &mdash; this add-on will assign the first custom image found from its parent, grand-parent, great-grand-parent, etc.
 
@@ -35,7 +39,7 @@ There is no add-on settings page for this plugin &mdash; simply *install* and *a
 
 <h3>Coded for Performance</h3>
 
-The WPSSO IPM add-on uses the WordPress `wp_cache_get()` and `update_meta_cache()` functions for maximum performance and fully integrate with WordPress core functionality.
+The WPSSO IPM add-on uses the WordPress `wp_cache_get()` and `update_meta_cache()` functions for maximum performance and integrate fully with WordPress core functionality.
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 

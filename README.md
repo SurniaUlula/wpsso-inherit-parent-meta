@@ -15,7 +15,11 @@
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-inherit-parent-meta/assets/icon-256x256.png"></p>
 
+<h4>Featured Image</h4>
+
 <p><strong>If no featured image has been selected</strong> &mdash; for a <em>post</em>, <em>page</em>, or <em>custom post type</em> &mdash; this add-on will assign the first featured image found from its parent, grand-parent, great-grand-parent, etc.</p>
+
+<h4>Custom Images</h4>
 
 <p><strong>If no custom Open Graph or Schema image has been selected</strong> &mdash; for a <em>post</em>, <em>page</em>, <em>custom post type</em>, <em>category</em>, <em>tag</em>, or <em>custom taxonomy</em> &mdash; this add-on will assign the first custom image found from its parent, grand-parent, great-grand-parent, etc.</p>
 
@@ -31,7 +35,7 @@ The Inherit Parent Meta (aka WPSSO IPM) add-on makes no permanent changes &mdash
 
 <h3>Coded for Performance</h3>
 
-<p>The WPSSO IPM add-on uses the WordPress <code>wp_cache_get()</code> and <code>update_meta_cache()</code> functions for maximum performance and fully integrate with WordPress core functionality.</p>
+<p>The WPSSO IPM add-on uses the WordPress <code>wp_cache_get()</code> and <code>update_meta_cache()</code> functions for maximum performance and integrate fully with WordPress core functionality.</p>
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
