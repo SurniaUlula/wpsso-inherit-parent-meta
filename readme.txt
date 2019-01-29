@@ -8,7 +8,7 @@ License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-inherit-parent-meta/assets/
 Tags: featured, custom, inherit, images, post meta, custom field
 Contributors: jsmoriss
-Requires PHP: 5.4
+Requires PHP: 5.5
 Requires At Least: 4.7
 Tested Up To: 5.0
 Stable Tag: 1.2.0
