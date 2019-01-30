@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: WPSSO Inherit Parent Meta [Add-on]
+ * Plugin Name: WPSSO Inherit Parent Meta
  * Plugin Slug: wpsso-inherit-parent-meta
  * Text Domain: wpsso-inherit-parent-meta
  * Domain Path: /languages
