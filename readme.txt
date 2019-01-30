@@ -1,5 +1,5 @@
 === WPSSO Inherit Parent Meta (Featured Image and Custom Images) ===
-Plugin Name: WPSSO Inherit Parent Meta
+Plugin Name: WPSSO Inherit Parent Meta [Add-on]
 Plugin Slug: wpsso-inherit-parent-meta
 Text Domain: wpsso-inherit-parent-meta
 Domain Path: /languages
