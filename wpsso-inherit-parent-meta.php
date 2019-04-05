@@ -12,7 +12,7 @@
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: WPSSO Core add-on to inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
  * Requires At Least: 3.8
- * Tested Up To: 5.1
+ * Tested Up To: 5.1.1
  * Version: 1.2.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
