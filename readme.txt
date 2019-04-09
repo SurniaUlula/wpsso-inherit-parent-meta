@@ -10,7 +10,7 @@ Tags: featured, custom, inherit, images, post meta, custom field
 Contributors: jsmoriss
 Requires At Least: 4.7
 Tested Up To: 5.1.1
-Stable Tag: 1.2.1
+Stable Tag: 1.2.2
 
 WPSSO Core add-on to inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
 
