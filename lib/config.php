@@ -88,7 +88,7 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 		public static function get_version( $add_slug = false ) {
 
 			$ext  = 'wpssoipm';
-			$info =& self::$cf[ 'plugin' ][$ext];
+			$info =& self::$cf[ 'plugin' ][ $ext ];
 
 			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
