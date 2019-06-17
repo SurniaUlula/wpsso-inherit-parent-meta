@@ -42,7 +42,7 @@ The WPSSO IPM add-on uses the WordPress `wp_cache_get()` and `update_meta_cache(
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO Inherit Parent Meta (aka WPSSO IPM) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/) (Free or Pro version).
+WPSSO Inherit Parent Meta (aka WPSSO IPM) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
 
 == Installation ==
 
@@ -71,6 +71,19 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * [GitHub](https://surniaulula.github.io/wpsso-inherit-parent-meta/)
 * [WordPress.org](https://plugins.trac.wordpress.org/browser/wpsso-inherit-parent-meta/)
 
+<h3>Changelog / Release Notes</h3>
+
+**Version 2.0.0-dev.1 (2019/06/17)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* None.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* Maintenance release for WPSSO Core v5.0.0.
+
 **Version 1.2.2 (2019/04/09)**
 
 * *New Features*
@@ -83,6 +96,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Maintenance release for WPSSO Core v4.27.2 config array updates.
 
 == Upgrade Notice ==
+
+= 2.0.0-dev.1 =
+
+(2019/06/17) Maintenance release for WPSSO Core v5.0.0.
 
 = 1.2.2 =
 
