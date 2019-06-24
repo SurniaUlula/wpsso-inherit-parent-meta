@@ -39,7 +39,7 @@ The Inherit Parent Meta (aka WPSSO IPM) add-on makes no permanent changes &mdash
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-<p>WPSSO Inherit Parent Meta (aka WPSSO IPM) is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a>.</p>
+<p>WPSSO Inherit Parent Meta (aka WPSSO IPM) is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a> (Standard or Premium version).</p>
 
 
 <h2>Installation</h2>
