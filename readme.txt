@@ -42,7 +42,7 @@ The WPSSO IPM add-on uses the WordPress `wp_cache_get()` and `update_meta_cache(
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO Inherit Parent Meta (aka WPSSO IPM) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/) (Standard or Premium version).
+WPSSO Inherit Parent Meta (aka WPSSO IPM) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
 
 == Installation ==
 
