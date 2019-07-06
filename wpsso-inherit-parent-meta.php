@@ -151,15 +151,16 @@ if ( ! class_exists( 'WpssoIpm' ) ) {
 
 					wp_die( 
 						'<p>' . sprintf( __( '%1$s requires %2$s version %3$s or higher and has been deactivated.',
-							'wpsso-inherit-parent-meta' ), $plugin_data['Name'], 'WordPress', self::$wp_min_version ) . '</p>' . 
+							'wpsso-inherit-parent-meta' ), $plugin_data[ 'Name' ], 'WordPress', self::$wp_min_version ) . '</p>' . 
 						'<p>' . sprintf( __( 'Please upgrade %1$s before trying to re-activate the %2$s plugin.',
-							'wpsso-inherit-parent-meta' ), 'WordPress', $plugin_data['Name'] ) . '</p>'
+							'wpsso-inherit-parent-meta' ), 'WordPress', $plugin_data[ 'Name' ] ) . '</p>'
 					);
 				}
 			}
 		}
 
 		public static function wpsso_init_textdomain() {
+
 			load_plugin_textdomain( 'wpsso-inherit-parent-meta', false, 'wpsso-inherit-parent-meta/languages/' );
 		}
 
@@ -171,7 +172,9 @@ if ( ! class_exists( 'WpssoIpm' ) ) {
 			$info = WpssoIpmConfig::$cf[ 'plugin' ][ 'wpssoipm' ];
 
 			if ( version_compare( $plugin_version, $info[ 'req' ][ 'min_version' ], '<' ) ) {
+
 				$this->have_req_min = false;
+
 				return $cf;
 			}
 
@@ -181,11 +184,13 @@ if ( ! class_exists( 'WpssoIpm' ) ) {
 		public function wpsso_get_avail( $avail ) {
 
 			if ( ! $this->have_req_min ) {
-				$avail['p_ext']['ipm'] = false;	// Signal that this extension / add-on is not available.
+
+				$avail[ 'p_ext' ][ 'ipm' ] = false;	// Signal that this extension / add-on is not available.
+
 				return $avail;
 			}
 
-			$avail['p_ext']['ipm'] = true;			// Signal that this extension / add-on is available.
+			$avail[ 'p_ext' ][ 'ipm' ] = true;		// Signal that this extension / add-on is available.
 
 			return $avail;
 		}
