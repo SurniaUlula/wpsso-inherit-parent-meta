@@ -1,4 +1,4 @@
-<h1>WPSSO Inherit Parent Meta (Featured Image and Custom Images)</h1>
+<h1>WPSSO Inherit Parent Meta</h1>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Inherit Parent Meta</td></tr>
