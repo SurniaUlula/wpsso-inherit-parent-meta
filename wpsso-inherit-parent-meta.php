@@ -220,7 +220,7 @@ if ( ! class_exists( 'WpssoIpm' ) ) {
 			}
 
 			if ( ! $this->have_req_min ) {
-				return;	// stop here
+				return;	// Stop here.
 			}
 
 			$this->filters = new WpssoIpmFilters( $this->p );
@@ -233,8 +233,10 @@ if ( ! class_exists( 'WpssoIpm' ) ) {
 			}
 
 			if ( ! $this->have_req_min ) {
+
 				$this->min_version_notice();
-				return;	// stop here
+
+				return;	// Stop here.
 			}
 		}
 
