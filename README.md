@@ -1,8 +1,8 @@
-<h1>WPSSO Inherit Parent Meta</h1>
+<h1>Inherit Parent Meta | WPSSO Add-on</h1>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Inherit Parent Meta</td></tr>
-<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core add-on to inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.0.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 4.7</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 5.2.2</td></tr>

@@ -1,4 +1,4 @@
-=== WPSSO Inherit Parent Meta ===
+=== Inherit Parent Meta | WPSSO Add-on ===
 Plugin Name: WPSSO Inherit Parent Meta
 Plugin Slug: wpsso-inherit-parent-meta
 Text Domain: wpsso-inherit-parent-meta
@@ -12,7 +12,7 @@ Requires At Least: 4.7
 Tested Up To: 5.2.2
 Stable Tag: 2.0.0
 
-WPSSO Core add-on to inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
+Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
 
 == Description ==
 
