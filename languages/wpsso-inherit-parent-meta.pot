@@ -16,8 +16,8 @@ msgstr ""
 #: lib/gettext-config.php:6
 msgctxt "plugin description"
 msgid ""
-"WPSSO Core add-on to inherit featured and custom images from parents for "
-"posts, pages, custom post types, categories, tags, and custom taxonomies."
+"Inherit featured and custom images from parents for posts, pages, custom "
+"post types, categories, tags, and custom taxonomies."
 msgstr ""
 
 #: wpsso-inherit-parent-meta.php:108
