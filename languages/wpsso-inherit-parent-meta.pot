@@ -56,8 +56,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"WPSSO Core add-on to inherit featured and custom images from parents for "
-"posts, pages, custom post types, categories, tags, and custom taxonomies."
+"Inherit featured and custom images from parents for posts, pages, custom "
+"post types, categories, tags, and custom taxonomies."
 msgstr ""
 
 #. Author of the plugin/theme
