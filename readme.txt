@@ -10,7 +10,7 @@ Tags: featured, custom, inherit, images, post meta, custom field
 Contributors: jsmoriss
 Requires At Least: 4.7
 Tested Up To: 5.2.2
-Stable Tag: 2.0.0
+Stable Tag: 2.0.1
 
 Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
 
