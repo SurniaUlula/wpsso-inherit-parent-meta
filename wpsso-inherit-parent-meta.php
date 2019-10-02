@@ -13,7 +13,7 @@
  * Description: Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
  * Requires At Least: 3.9
  * Tested Up To: 5.2.3
- * Version: 2.0.2-dev.3
+ * Version: 2.0.2-b.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
