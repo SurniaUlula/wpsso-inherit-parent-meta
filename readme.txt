@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-inherit-parent-meta/assets/
 Tags: featured, custom, inherit, images, post meta, custom field
 Contributors: jsmoriss
 Requires At Least: 3.9
-Tested Up To: 5.2.3
+Tested Up To: 5.2.4
 Stable Tag: 2.0.2
 
 Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
