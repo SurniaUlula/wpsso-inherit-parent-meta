@@ -67,8 +67,7 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 
 		public static function get_version( $add_slug = false ) {
 
-			$ext  = 'wpssoipm';
-			$info =& self::$cf[ 'plugin' ][ $ext ];
+			$info =& self::$cf[ 'plugin' ][ 'wpssoipm' ];
 
 			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
@@ -79,12 +78,17 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 				return;
 			}
 
+			$info =& self::$cf[ 'plugin' ][ 'wpssoipm' ];
+
+			/**
+			 * Define fixed constants.
+			 */
 			define( 'WPSSOIPM_FILEPATH', $plugin_filepath );						
-			define( 'WPSSOIPM_PLUGINBASE', self::$cf[ 'plugin' ][ 'wpssoipm' ][ 'base' ] );		// wpsso-inherit-parent-meta/wpsso-inherit-parent-meta.php
+			define( 'WPSSOIPM_PLUGINBASE', $info[ 'base' ] );	// Example: wpsso-inherit-parent-meta/wpsso-inherit-parent-meta.php.
 			define( 'WPSSOIPM_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
-			define( 'WPSSOIPM_PLUGINSLUG', self::$cf[ 'plugin' ][ 'wpssoipm' ][ 'slug' ] );		// wpsso-inherit-parent-meta
+			define( 'WPSSOIPM_PLUGINSLUG', $info[ 'slug' ] );	// Example: wpsso-inherit-parent-meta.
 			define( 'WPSSOIPM_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
-			define( 'WPSSOIPM_VERSION', self::$cf[ 'plugin' ][ 'wpssoipm' ][ 'version' ] );						
+			define( 'WPSSOIPM_VERSION', $info[ 'version' ] );						
 		}
 
 		public static function require_libs( $plugin_filepath ) {
