@@ -34,7 +34,7 @@ msgstr ""
 msgid "Please upgrade %1$s before trying to re-activate the %2$s plugin."
 msgstr ""
 
-#: wpsso-inherit-parent-meta.php:230
+#: wpsso-inherit-parent-meta.php:234
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
