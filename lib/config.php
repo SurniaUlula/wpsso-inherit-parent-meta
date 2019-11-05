@@ -93,8 +93,8 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 
 		public static function require_libs( $plugin_filepath ) {
 
-			require_once WPSSOIPM_PLUGINDIR . 'lib/register.php';
 			require_once WPSSOIPM_PLUGINDIR . 'lib/filters.php';
+			require_once WPSSOIPM_PLUGINDIR . 'lib/register.php';
 
 			add_filter( 'wpssoipm_load_lib', array( 'WpssoIpmConfig', 'load_lib' ), 10, 3 );
 		}
