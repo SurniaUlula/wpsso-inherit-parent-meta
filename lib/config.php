@@ -23,13 +23,13 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 					'desc'        => 'Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.',
 					'slug'        => 'wpsso-inherit-parent-meta',
 					'base'        => 'wpsso-inherit-parent-meta/wpsso-inherit-parent-meta.php',
-					'update_auth' => '',
+					'update_auth' => '',		// No premium version.
 					'text_domain' => 'wpsso-inherit-parent-meta',
 					'domain_path' => '/languages',
 					'req' => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '6.11.0',
+						'min_version' => '6.11.1',
 					),
 					'assets' => array(
 						'icons' => array(
