@@ -72,7 +72,7 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
 
-		public static function set_constants( $plugin_filepath ) { 
+		public static function set_constants( $plugin_file_path ) { 
 
 			if ( defined( 'WPSSOIPM_VERSION' ) ) {	// Define constants only once.
 				return;
@@ -83,15 +83,15 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 			/**
 			 * Define fixed constants.
 			 */
-			define( 'WPSSOIPM_FILEPATH', $plugin_filepath );						
+			define( 'WPSSOIPM_FILEPATH', $plugin_file_path );						
 			define( 'WPSSOIPM_PLUGINBASE', $info[ 'base' ] );	// Example: wpsso-inherit-parent-meta/wpsso-inherit-parent-meta.php.
-			define( 'WPSSOIPM_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
+			define( 'WPSSOIPM_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_file_path ) ) ) );
 			define( 'WPSSOIPM_PLUGINSLUG', $info[ 'slug' ] );	// Example: wpsso-inherit-parent-meta.
-			define( 'WPSSOIPM_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
+			define( 'WPSSOIPM_URLPATH', trailingslashit( plugins_url( '', $plugin_file_path ) ) );
 			define( 'WPSSOIPM_VERSION', $info[ 'version' ] );						
 		}
 
-		public static function require_libs( $plugin_filepath ) {
+		public static function require_libs( $plugin_file_path ) {
 
 			require_once WPSSOIPM_PLUGINDIR . 'lib/filters.php';
 			require_once WPSSOIPM_PLUGINDIR . 'lib/register.php';
@@ -103,11 +103,11 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 
 			if ( false === $ret && ! empty( $filespec ) ) {
 
-				$filepath = WPSSOIPM_PLUGINDIR . 'lib/' . $filespec . '.php';
+				$file_path = WPSSOIPM_PLUGINDIR . 'lib/' . $filespec . '.php';
 
-				if ( file_exists( $filepath ) ) {
+				if ( file_exists( $file_path ) ) {
 
-					require_once $filepath;
+					require_once $file_path;
 
 					if ( empty( $classname ) ) {
 						return SucomUtil::sanitize_classname( 'wpssoipm' . $filespec, $allow_underscore = false );
