@@ -4,8 +4,9 @@
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Inherit Parent Meta</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.0.3</td></tr>
-<tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.9</td></tr>
-<tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 5.3</td></tr>
+<tr><th align="right" valign="top" nowrap>Requires PHP</th><td>5.5 or newer</td></tr>
+<tr><th align="right" valign="top" nowrap>Requires WordPress</th><td>3.9 or newer</td></tr>
+<tr><th align="right" valign="top" nowrap>Tested Up To WordPress</th><td>5.3</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="https://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
 <tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>featured, custom, inherit, images, post meta, custom field</td></tr>
