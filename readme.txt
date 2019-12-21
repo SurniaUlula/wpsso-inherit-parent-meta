@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-inherit-parent-meta/assets/
 Tags: featured, custom, inherit, images, post meta, custom field
 Contributors: jsmoriss
 Requires PHP: 5.5
-Requires At Least: 3.9
+Requires At Least: 4.0
 Tested Up To: 5.3.2
 Stable Tag: 2.0.3
 
@@ -84,6 +84,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 * **Developer Notes**
 	* Updated `WpssoIpmRegister->activate_plugin()` for the new WpssoUtilReg class in WPSSO Core v6.13.1.
+* **Requires At Least**
+	* PHP v5.5.
+	* WordPress v4.0.
+	* WPSSO Core v6.16.0.
 
 == Upgrade Notice ==
 
