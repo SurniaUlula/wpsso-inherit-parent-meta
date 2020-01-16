@@ -1,5 +1,5 @@
-=== Inherit Parent Meta | WPSSO Add-on ===
-Plugin Name: WPSSO Inherit Parent Meta
+=== Inherit Parent Metadata | WPSSO Add-on ===
+Plugin Name: WPSSO Inherit Parent Metadata
 Plugin Slug: wpsso-inherit-parent-meta
 Text Domain: wpsso-inherit-parent-meta
 Domain Path: /languages
@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 4.0
 Tested Up To: 5.3.2
-Stable Tag: 2.0.3
+Stable Tag: 2.1.0
 
 Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
 
@@ -32,7 +32,7 @@ Inherited featured and custom images are assigned as default values &mdash; you 
 WordPress does not offer featured images for taxonomy terms (categories, tags, and custom taxonomies) &mdash; to assign a custom image to a term, select an image in the Document SSO metabox when editing a term. The WPSSO IPM add-on will cascade the custom image(s) to the children of that term, along with the children of those children, etc.
 
 <blockquote>
-The Inherit Parent Meta (aka WPSSO IPM) add-on makes no permanent changes &mdash; simply deactivate the plugin to disable the automatically inherited images. ;-)
+The Inherit Parent Metadata (aka WPSSO IPM) add-on makes no permanent changes &mdash; simply deactivate the plugin to disable the automatically inherited images. ;-)
 </blockquote>
 
 There is no add-on settings page for this plugin &mdash; simply *install* and *activate* the plugin.
@@ -43,7 +43,7 @@ The WPSSO IPM add-on uses the WordPress `wp_cache_get()` and `update_meta_cache(
 
 <h3>WPSSO Core Plugin Required</h3>
 
-WPSSO Inherit Parent Meta (aka WPSSO IPM) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
+WPSSO Inherit Parent Metadata (aka WPSSO IPM) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
 
 == Installation ==
 
@@ -74,24 +74,24 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.0.3 (2019/11/23)**
+**Version 2.1.0 (2020/01/16)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* None.
+	* Minor change to the plugin name and translated strings.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Updated `WpssoIpmRegister->activate_plugin()` for the new WpssoUtilReg class in WPSSO Core v6.13.1.
+	* None.
 * **Requires At Least**
 	* PHP v5.5.
 	* WordPress v4.0.
-	* WPSSO Core v6.16.2.
+	* WPSSO Core v6.17.0.
 
 == Upgrade Notice ==
 
-= 2.0.3 =
+= 2.1.0 =
 
-(2019/11/23) Update for the new WpssoUtilReg class in WPSSO Core v6.13.1.
+(2020/01/16) Minor change to the plugin name and translated strings. Requires at least WPSSO Core v6.17.0.
 

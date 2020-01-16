@@ -1,9 +1,9 @@
-<h1>Inherit Parent Meta</h1><h3>WPSSO Add-on</h3>
+<h1>Inherit Parent Metadata</h1><h3>WPSSO Add-on</h3>
 
 <table>
-<tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Inherit Parent Meta</td></tr>
+<tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Inherit Parent Metadata</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.</td></tr>
-<tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.0.3</td></tr>
+<tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.1.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires PHP</th><td>5.5 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires WordPress</th><td>4.0 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To WordPress</th><td>5.3.2</td></tr>
@@ -29,7 +29,7 @@
 <p>WordPress does not offer featured images for taxonomy terms (categories, tags, and custom taxonomies) &mdash; to assign a custom image to a term, select an image in the Document SSO metabox when editing a term. The WPSSO IPM add-on will cascade the custom image(s) to the children of that term, along with the children of those children, etc.</p>
 
 <blockquote>
-The Inherit Parent Meta (aka WPSSO IPM) add-on makes no permanent changes &mdash; simply deactivate the plugin to disable the automatically inherited images. ;-)
+The Inherit Parent Metadata (aka WPSSO IPM) add-on makes no permanent changes &mdash; simply deactivate the plugin to disable the automatically inherited images. ;-)
 </blockquote>
 
 <p>There is no add-on settings page for this plugin &mdash; simply <em>install</em> and <em>activate</em> the plugin.</p>
@@ -40,7 +40,7 @@ The Inherit Parent Meta (aka WPSSO IPM) add-on makes no permanent changes &mdash
 
 <h3>WPSSO Core Plugin Required</h3>
 
-<p>WPSSO Inherit Parent Meta (aka WPSSO IPM) is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a>.</p>
+<p>WPSSO Inherit Parent Metadata (aka WPSSO IPM) is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a>.</p>
 
 
 <h2>Installation</h2>
