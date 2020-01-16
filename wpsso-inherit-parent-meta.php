@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: WPSSO Inherit Parent Meta
+ * Plugin Name: WPSSO Inherit Parent Metadata
  * Plugin Slug: wpsso-inherit-parent-meta
  * Text Domain: wpsso-inherit-parent-meta
  * Domain Path: /languages
@@ -14,7 +14,7 @@
  * Requires PHP: 5.5
  * Requires At Least: 4.0
  * Tested Up To: 5.3.2
- * Version: 2.0.3
+ * Version: 2.1.0
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
