@@ -47,16 +47,28 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 			),
 			'form' => array(
 				'ipm_inherit' => array(
+
+					/**
+					 * Open Graph - Priority Image.
+					 */
 					'og_img_max'        => null,
 					'og_img_id'         => null,
 					'og_img_id_pre'     => null,
 					'og_img_url'        => null,
-					'tc_sum_img_id'     => null,
-					'tc_sum_img_id_pre' => null,
-					'tc_sum_img_url'    => null,
+
+					/**
+					 * Twitter Card.
+					 */
 					'tc_lrg_img_id'     => null,
 					'tc_lrg_img_id_pre' => null,
 					'tc_lrg_img_url'    => null,
+					'tc_sum_img_id'     => null,
+					'tc_sum_img_id_pre' => null,
+					'tc_sum_img_url'    => null,
+
+					/**
+					 * Schema JSON-LD Markup / Rich Results.
+					 */
 					'schema_img_max'    => null,
 					'schema_img_id'     => null,
 					'schema_img_id_pre' => null,

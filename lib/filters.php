@@ -150,7 +150,7 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 
 					$parent_opts = maybe_unserialize( $meta_cache[ WPSSO_META_NAME ][ 0 ] );
 
-					$parent_opts = array_intersect_key( $parent_opts, WpssoIpmConfig::$cf['form']['ipm_inherit'] );
+					$parent_opts = array_intersect_key( $parent_opts, WpssoIpmConfig::$cf[ 'form' ][ 'ipm_inherit' ] );
 
 					$local_cache[ $cache_index ] = array_merge( $local_cache[ $cache_index ], $parent_opts );
 				}
