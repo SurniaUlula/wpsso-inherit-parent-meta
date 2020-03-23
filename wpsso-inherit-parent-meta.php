@@ -211,6 +211,9 @@ if ( ! class_exists( 'WpssoIpm' ) ) {
 			$this->filters = new WpssoIpmFilters( $this->p );
 		}
 
+		/**
+		 * All WPSSO objects are instantiated and configured.
+		 */
 		public function wpsso_init_plugin() {
 
 			if ( $this->p->debug->enabled ) {
@@ -219,7 +222,7 @@ if ( ! class_exists( 'WpssoIpm' ) ) {
 
 			if ( ! $this->have_min_version ) {
 
-				$this->min_version_notice();
+				$this->min_version_notice();	// Show minimum version notice.
 
 				return;	// Stop here.
 			}
