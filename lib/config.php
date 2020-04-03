@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoipm' => array(			// Plugin acronym.
-					'version'     => '2.2.0-dev.1',	// Plugin version.
+					'version'     => '2.2.0-dev.2',	// Plugin version.
 					'opt_version' => '1',		// Increment when changing default option values.
 					'short'       => 'WPSSO IPM',	// Short plugin name.
 					'name'        => 'WPSSO Inherit Parent Metadata',
@@ -34,12 +34,12 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 						'wpsso' => array(
 							'class'       => 'Wpsso',
 							'name'        => 'WPSSO Core',
-							'min_version' => '6.27.1',
+							'min_version' => '6.27.2-dev.2',
 						),
 					),
 
 					/**
-					 * Relative paths to asset images.
+					 * URLs or relative paths to plugin banners and icons.
 					 */
 					'assets' => array(
 						'icons' => array(
