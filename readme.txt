@@ -13,7 +13,7 @@ Requires At Least: 4.2
 Tested Up To: 5.4
 Stable Tag: 2.1.0
 
-Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
+Inherit Featured and Custom Images from Parents for Posts, Pages, Custom Post Types, Categories, Tags, and Custom Taxonomies.
 
 == Description ==
 
