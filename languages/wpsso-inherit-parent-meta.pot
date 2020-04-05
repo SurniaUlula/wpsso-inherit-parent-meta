@@ -16,8 +16,8 @@ msgstr ""
 #: lib/gettext-config.php:6
 msgctxt "plugin description"
 msgid ""
-"Inherit featured and custom images from parents for posts, pages, custom "
-"post types, categories, tags, and custom taxonomies."
+"Inherit Featured and Custom Images from Parents for Posts, Pages, Custom "
+"Post Types, Categories, Tags, and Custom Taxonomies."
 msgstr ""
 
 #: wpsso-inherit-parent-meta.php:123
@@ -50,8 +50,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Inherit featured and custom images from parents for posts, pages, custom "
-"post types, categories, tags, and custom taxonomies."
+"Inherit Featured and Custom Images from Parents for Posts, Pages, Custom "
+"Post Types, Categories, Tags, and Custom Taxonomies."
 msgstr ""
 
 #. Author of the plugin/theme

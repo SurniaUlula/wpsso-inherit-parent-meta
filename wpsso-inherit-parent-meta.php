@@ -10,7 +10,7 @@
  * Author URI: https://wpsso.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Description: Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
+ * Description: Inherit Featured and Custom Images from Parents for Posts, Pages, Custom Post Types, Categories, Tags, and Custom Taxonomies.
  * Requires PHP: 5.6
  * Requires At Least: 4.2
  * Tested Up To: 5.4

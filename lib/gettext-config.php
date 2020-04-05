@@ -3,4 +3,4 @@
 /**
  * Extract of translatable text strings from the static config array.
  */
-_x( 'Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.', 'plugin description', 'wpsso-inherit-parent-meta' );
+_x( 'Inherit Featured and Custom Images from Parents for Posts, Pages, Custom Post Types, Categories, Tags, and Custom Taxonomies.', 'plugin description', 'wpsso-inherit-parent-meta' );
