@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Inherit Parent Meta 2.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-inherit-parent-meta\n"
-"POT-Creation-Date: 2020-04-03 11:25-0700\n"
-"PO-Revision-Date: 2020-04-03 11:25-0700\n"
+"POT-Creation-Date: 2020-04-05 15:44-0700\n"
+"PO-Revision-Date: 2020-04-05 15:44-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -17,8 +17,8 @@ msgstr ""
 
 #: lib/gettext-config.php:6
 msgctxt "plugin description"
-msgid "Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies."
-msgstr "Hérite l'image \"mise en avant\" et personnalisées des parents pour articles, pages, types d'articles personnalisés, catégories, étiquettes, et taxonomies personnalisées."
+msgid "Inherit Featured and Custom Images from Parents for Posts, Pages, Custom Post Types, Categories, Tags, and Custom Taxonomies."
+msgstr "Hérite l'image \"mise en avant\" et personnalisées des parents pour les articles, pages, types d'articles personnalisés, catégories, étiquettes, et taxonomies personnalisées."
 
 #: wpsso-inherit-parent-meta.php:123
 msgid "The %1$s add-on requires the %2$s plugin &mdash; install and activate the plugin or <a href=\"%3$s\">deactivate this add-on</a>."
@@ -45,8 +45,8 @@ msgid "https://wpsso.com/extend/plugins/wpsso-inherit-parent-meta/"
 msgstr "https://wpsso.com/extend/plugins/wpsso-inherit-parent-meta/"
 
 #. Description of the plugin/theme
-msgid "Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies."
-msgstr "Hérite l'image \"mise en avant\" et personnalisées des parents pour articles, pages, types d'articles personnalisés, catégories, étiquettes, et taxonomies personnalisées."
+msgid "Inherit Featured and Custom Images from Parents for Posts, Pages, Custom Post Types, Categories, Tags, and Custom Taxonomies."
+msgstr "Hérite l'image \"mise en avant\" et personnalisées des parents pour les articles, pages, types d'articles personnalisés, catégories, étiquettes, et taxonomies personnalisées."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"
