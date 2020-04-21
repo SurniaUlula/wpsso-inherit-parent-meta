@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoipm' => array(			// Plugin acronym.
-					'version'     => '2.2.0',	// Plugin version.
+					'version'     => '2.3.0',	// Plugin version.
 					'opt_version' => '1',		// Increment when changing default option values.
 					'short'       => 'WPSSO IPM',	// Short plugin name.
 					'name'        => 'WPSSO Inherit Parent Metadata',
@@ -63,12 +63,19 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 				'ipm_inherit' => array(
 
 					/**
-					 * Open Graph - Priority Image.
+					 * Open Graph.
 					 */
-					'og_img_max'        => null,
-					'og_img_id'         => null,
-					'og_img_id_pre'     => null,
-					'og_img_url'        => null,
+					'og_img_max'    => null,
+					'og_img_id'     => null,
+					'og_img_id_pre' => null,
+					'og_img_url'    => null,
+
+					/**
+					 * Pinterest.
+					 */
+					'p_img_id'     => null,
+					'p_img_id_pre' => null,
+					'p_img_url'    => null,
 
 					/**
 					 * Twitter Card.
@@ -76,6 +83,7 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 					'tc_lrg_img_id'     => null,
 					'tc_lrg_img_id_pre' => null,
 					'tc_lrg_img_url'    => null,
+
 					'tc_sum_img_id'     => null,
 					'tc_sum_img_id_pre' => null,
 					'tc_sum_img_url'    => null,

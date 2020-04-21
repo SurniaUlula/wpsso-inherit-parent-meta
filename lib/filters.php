@@ -34,7 +34,7 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 				$this->p->debug->mark();
 			}
 
-			add_filter( 'get_post_metadata', array( $this, 'get_meta_thumbnail_id' ), 10, 4 );
+			add_filter( 'get_post_metadata', array( $this, 'get_post_metadata' ), 10, 4 );
 
 			$this->p->util->add_plugin_filters( $this, array(
 				'get_md_defaults' => 2,
@@ -45,7 +45,7 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 			) );
 		}
 
-		public function get_meta_thumbnail_id( $meta_data, $obj_id, $meta_key, $single ) {
+		public function get_post_metadata( $meta_data, $obj_id, $meta_key, $single ) {
 
 			/**
 			 * We're only interested in the featured image (aka '_thumbnail_id').
@@ -71,6 +71,7 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 				$meta_cache = $this->get_meta_cache( $parent_id, 'post' );
 
 				if ( ! empty( $meta_cache[ $meta_key ] ) ) {
+
 					if ( $single ) {
 						return maybe_unserialize( $meta_cache[ $meta_key ][ 0 ] );
 					} else {
@@ -112,10 +113,20 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 
 		private function get_meta_cache( $obj_id, $meta_type ) {
 
-			$meta_cache = wp_cache_get( $obj_id, $meta_type . '_meta' );
+			/**
+			 * Returns (bool|mixed) false on failure to retrieve contents or the cache contents on success.
+			 *
+			 * $found (bool) (Optional) whether the key was found in the cache (passed by reference). 
+			 */
+			$meta_cache = wp_cache_get( $obj_id, $group = $meta_type . '_meta', $force = false, $found );
 
-			if ( ! $meta_cache ) {
+			if ( ! $found ) {
+
+				/**
+				 * Returns (array|false) metadata cache for the specified objects, or false on failure.
+				 */
 				$meta_cache = update_meta_cache( $meta_type, array( $obj_id ) );
+
 				$meta_cache = $meta_cache[ $obj_id ];
 			}
 
@@ -146,7 +157,7 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 
 				$meta_cache = $this->get_meta_cache( $parent_id, $mod[ 'name' ] );
 
-				if ( isset( $meta_cache[ WPSSO_META_NAME ][0] ) ) {
+				if ( isset( $meta_cache[ WPSSO_META_NAME ][ 0 ] ) ) {
 
 					$parent_opts = maybe_unserialize( $meta_cache[ WPSSO_META_NAME ][ 0 ] );
 
