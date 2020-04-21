@@ -1,0 +1,16 @@
+
+/**
+ * Hard-coded / fixed constants. These values cannot be modified.
+ */
+WPSSOIPM_FILEPATH
+WPSSOIPM_PLUGINBASE
+WPSSOIPM_PLUGINDIR
+WPSSOIPM_PLUGINSLUG
+WPSSOIPM_URLPATH
+WPSSOIPM_VERSION
+
+/**
+ * Define in your wp-config.php file to change the default value.
+ */
+WPSSOIPM_POST_METADATA_KEYS = array( '_thumbnail_id' )
+
