@@ -31,9 +31,7 @@ Inherited featured and custom images are assigned as default values &mdash; you 
 
 WordPress does not offer featured images for taxonomy terms (categories, tags, and custom taxonomies) &mdash; to assign a custom image to a term, select an image in the Document SSO metabox when editing a term. The WPSSO IPM add-on will cascade the custom image(s) to the children of that term, along with the children of those children, etc.
 
-<blockquote>
 The Inherit Parent Metadata (aka WPSSO IPM) add-on makes no permanent changes &mdash; simply deactivate the plugin to disable the automatically inherited images. ;-)
-</blockquote>
 
 There is no add-on settings page for this plugin &mdash; simply *install* and *activate* the plugin.
 
