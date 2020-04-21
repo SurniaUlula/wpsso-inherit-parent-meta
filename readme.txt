@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.2
 Tested Up To: 5.4
-Stable Tag: 2.2.0
+Stable Tag: 3.0.0
 
 Inherit Featured and Custom Images from Parents for Posts, Pages, Custom Post Types, Categories, Tags, and Custom Taxonomies.
 
@@ -74,12 +74,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.3.0 (2020/04/21)**
+**Version 3.0.0 (2020/04/21)**
 
 * **New Features**
-	* None.
+	* Added a new WPSSOIPM_POST_METADATA_KEYS constant to define an array of inherited post metadata keys.
 * **Improvements**
-	* Added the Pinterest image in the Document SSO metabox to the list of inherited images.
+	* Added the custom Pinterest image from the Document SSO metabox to the list of inherited images.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -91,7 +91,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.3.0 =
+= 3.0.0 =
 
-(2020/04/21) Added the Pinterest image in the Document SSO metabox to the list of inherited images.
+(2020/04/21) Added a new WPSSOIPM_POST_METADATA_KEYS constant. Added the custom Pinterest image to the list of inherited images.
 
