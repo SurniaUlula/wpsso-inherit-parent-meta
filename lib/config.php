@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoipm' => array(			// Plugin acronym.
-					'version'     => '2.3.0',	// Plugin version.
+					'version'     => '3.0.0',	// Plugin version.
 					'opt_version' => '1',		// Increment when changing default option values.
 					'short'       => 'WPSSO IPM',	// Short plugin name.
 					'name'        => 'WPSSO Inherit Parent Metadata',
@@ -123,6 +123,47 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 			define( 'WPSSOIPM_PLUGINSLUG', $info[ 'slug' ] );	// Example: wpsso-inherit-parent-meta.
 			define( 'WPSSOIPM_URLPATH', trailingslashit( plugins_url( '', $plugin_file_path ) ) );
 			define( 'WPSSOIPM_VERSION', $info[ 'version' ] );						
+
+			/**
+			 * Define variable constants.
+			 */
+			self::set_variable_constants();
+		}
+
+		public static function set_variable_constants( $var_const = null ) {
+
+			if ( ! is_array( $var_const ) ) {
+				$var_const = (array) self::get_variable_constants();
+			}
+
+			/**
+			 * Define the variable constants, if not already defined.
+			 */
+			foreach ( $var_const as $name => $value ) {
+
+				if ( ! defined( $name ) ) {
+					define( $name, $value );
+				}
+			}
+		}
+
+		public static function get_variable_constants() {
+
+			$var_const = array();
+
+			$var_const[ 'WPSSOIPM_POST_METADATA_KEYS' ] = array( '_thumbnail_id' );						
+
+			/**
+			 * Maybe override the default constant value with a pre-defined constant value.
+			 */
+			foreach ( $var_const as $name => $value ) {
+
+				if ( defined( $name ) ) {
+					$var_const[$name] = constant( $name );
+				}
+			}
+
+			return $var_const;
 		}
 
 		public static function require_libs( $plugin_file_path ) {

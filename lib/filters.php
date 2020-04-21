@@ -41,30 +41,47 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 				'get_md_options'  => array(
 					'get_post_options' => 3,
 					'get_term_options' => 3,
+					'get_user_options' => 3,
 				),
 			) );
 		}
 
 		public function get_post_metadata( $meta_data, $obj_id, $meta_key, $single ) {
 
+			static $do_inherit = array();
+
+			if ( isset( $do_inherit[ $meta_key ] ) ) {	// Previously checked.
+			
+				if ( ! $do_inherit[ $meta_key ] ) {	// Do not inherit this metadata key.
+					return $meta_data;
+				}
+			}
+
 			/**
-			 * We're only interested in the featured image (aka '_thumbnail_id').
+			 * Default WPSSOIPM_POST_METADATA_KEYS is array( '_thumbnail_id' ).
 			 */
-			if ( $meta_key !== '_thumbnail_id' ) {
+			$inherit_keys = (array) SucomUtil::get_const( 'WPSSOIPM_POST_METADATA_KEYS', array() );
+
+			if ( ! in_array( $meta_key, $inherit_keys, $strict = false ) ) {
+
+				$do_inherit[ $meta_key ] = false;	// Remember this check.
+
 				return $meta_data;
 			}
+
+			$do_inherit[ $meta_key ] = true;	// Remember this check.
 
 			$meta_cache = $this->get_meta_cache( $obj_id, 'post' );
 
 			/**
-			 * If the meta already has a featured image, then no need to check the parents.
+			 * If the meta already has metadata, then no need to check the parents.
 			 */
 			if ( ! empty( $meta_cache[ $meta_key ] ) ) {
 				return $meta_data;
 			}
 
 			/**
-			 * Start with the parent and work our way up - return the first featured image found.
+			 * Start with the parent and work our way up - return the first metadata found.
 			 */
 			foreach ( get_post_ancestors( $obj_id ) as $parent_id ) {
 
