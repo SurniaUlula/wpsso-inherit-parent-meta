@@ -74,43 +74,24 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.2.0 (2020/04/06)**
+**Version 2.3.0 (2020/04/21)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* Updated "Requires At Least" to WordPress v4.2.
+	* Added the Pinterest image in the Document SSO metabox to the list of inherited images.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Refactored WPSSO Core active and minimum version dependency checks.
+	* None.
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.2.
 	* WPSSO Core v7.0.1.
 
-**Version 2.1.0 (2020/01/16)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Minor change to the plugin name and translated strings.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.0.
-	* WPSSO Core v6.27.1.
-
 == Upgrade Notice ==
 
-= 2.2.0 =
+= 2.3.0 =
 
-(2020/04/06) Updated "Requires At Least" to WordPress v4.2. Refactored WPSSO Core active and minimum version dependency checks.
-
-= 2.1.0 =
-
-(2020/01/16) Minor change to the plugin name and translated strings. Requires at least WPSSO Core v6.17.0.
+(2020/04/21) Added the Pinterest image in the Document SSO metabox to the list of inherited images.
 
