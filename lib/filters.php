@@ -36,12 +36,15 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 
 			add_filter( 'get_post_metadata', array( $this, 'get_post_metadata' ), 10, 4 );
 
+			/**
+			 * Do not include the 'wpsso_get_user_options' filter as there is no parent / child relationship for
+			 * WordPress user objects - inheritance is only possible for post and term objects.
+			 */
 			$this->p->util->add_plugin_filters( $this, array(
 				'get_md_defaults' => 2,
 				'get_md_options'  => array(
 					'get_post_options' => 3,
 					'get_term_options' => 3,
-					'get_user_options' => 3,
 				),
 			) );
 		}
@@ -58,7 +61,20 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 			}
 
 			/**
-			 * Default WPSSOIPM_POST_METADATA_KEYS is array( '_thumbnail_id' ).
+			 * Do not inherit the WPSSO_META_NAME metadata array.
+			 *
+			 * Individual WPSSO metadata option values are handled by the 'wpsso_get_post_options' and
+			 * 'wpsso_get_term_options' filters.
+			 */
+			if ( WPSSO_META_NAME === $meta_key ) {	// Just in case.
+
+				$do_inherit[ $meta_key ] = false;	// Remember this check.
+
+				return $meta_data;
+			}
+
+			/**
+			 * Default WPSSOIPM_POST_METADATA_KEYS value is array( '_thumbnail_id' ).
 			 */
 			$inherit_keys = (array) SucomUtil::get_const( 'WPSSOIPM_POST_METADATA_KEYS', array() );
 
