@@ -51,26 +51,17 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 
 		public function get_post_metadata( $meta_data, $obj_id, $meta_key, $single ) {
 
-			static $do_inherit = array();
+			/**
+			 * Do not inherit the WPSSO_META_NAME metadata array. Individual WPSSO metadata option values are handled
+			 * by the 'wpsso_get_post_options' and 'wpsso_get_term_options' filters.
+			 */
+			static $do_inherit = array( WPSSO_META_NAME => false );
 
 			if ( isset( $do_inherit[ $meta_key ] ) ) {	// Previously checked.
-			
+
 				if ( ! $do_inherit[ $meta_key ] ) {	// Do not inherit this metadata key.
 					return $meta_data;
 				}
-			}
-
-			/**
-			 * Do not inherit the WPSSO_META_NAME metadata array.
-			 *
-			 * Individual WPSSO metadata option values are handled by the 'wpsso_get_post_options' and
-			 * 'wpsso_get_term_options' filters.
-			 */
-			if ( WPSSO_META_NAME === $meta_key ) {	// Just in case.
-
-				$do_inherit[ $meta_key ] = false;	// Remember this check.
-
-				return $meta_data;
 			}
 
 			/**
