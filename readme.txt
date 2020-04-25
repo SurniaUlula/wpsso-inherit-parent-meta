@@ -47,8 +47,8 @@ WPSSO Inherit Parent Metadata (aka WPSSO IPM) is an add-on for the [WPSSO Core p
 
 <h3 class="top">Install and Uninstall</h3>
 
-* [Install the WPSSO IPM Add-on](https://wpsso.com/docs/plugins/wpsso-inherit-parent-meta/installation/install-the-plugin/)
-* [Uninstall the WPSSO IPM Add-on](https://wpsso.com/docs/plugins/wpsso-inherit-parent-meta/installation/uninstall-the-plugin/)
+* [Install the WPSSO Inherit Parent Metadata add-on](https://wpsso.com/docs/plugins/wpsso-inherit-parent-meta/installation/install-the-plugin/).
+* [Uninstall the WPSSO Inherit Parent Metadata add-on](https://wpsso.com/docs/plugins/wpsso-inherit-parent-meta/installation/uninstall-the-plugin/).
 
 == Frequently Asked Questions ==
 
