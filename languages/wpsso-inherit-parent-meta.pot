@@ -16,7 +16,7 @@ msgstr ""
 #: lib/gettext-config.php:6
 msgctxt "plugin description"
 msgid ""
-"Inherit Featured and Custom Images from Parents for Posts, Pages, Custom "
+"Inherit the Featured and Custom Images from Parents for Posts, Pages, Custom "
 "Post Types, Categories, Tags, and Custom Taxonomies."
 msgstr ""
 
@@ -50,7 +50,7 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Inherit Featured and Custom Images from Parents for Posts, Pages, Custom "
+"Inherit the Featured and Custom Images from Parents for Posts, Pages, Custom "
 "Post Types, Categories, Tags, and Custom Taxonomies."
 msgstr ""
 
