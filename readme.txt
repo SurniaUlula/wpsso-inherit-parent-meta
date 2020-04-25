@@ -19,19 +19,21 @@ Inherit Featured and Custom Images from Parents for Posts, Pages, Custom Post Ty
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-inherit-parent-meta/assets/icon-256x256.png"></p>
 
+Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
+
 = Featured Image =
 
 **If no featured image has been selected** &mdash; for a *post*, *page*, or *custom post type* &mdash; this add-on will assign the first featured image found from its parent, grand-parent, great-grand-parent, etc.
 
-= Custom Images =
-
-**If no custom Open Graph or Schema image has been selected** &mdash; for a *post*, *page*, *custom post type*, *category*, *tag*, or *custom taxonomy* &mdash; this add-on will assign the first custom image found from its parent, grand-parent, great-grand-parent, etc.
-
-Inherited featured and custom images are assigned as default values &mdash; you can always edit any child and select a different featured or custom image (which will then be inherited by its own children).
-
 WordPress does not offer featured images for taxonomy terms (categories, tags, and custom taxonomies) &mdash; to assign a custom image to a term, select an image in the Document SSO metabox when editing a term. The WPSSO IPM add-on will cascade the custom image(s) to the children of that term, along with the children of those children, etc.
 
-The Inherit Parent Metadata (aka WPSSO IPM) add-on makes no permanent changes &mdash; simply deactivate the plugin to disable the automatically inherited images. ;-)
+= Custom Images =
+
+**If no custom image has been selected in the Document SSO metabox** &mdash; for a *post*, *page*, *custom post type*, *category*, *tag*, or *custom taxonomy* &mdash; this add-on will assign the first custom image found (if any) from its parent, grand-parent, great-grand-parent, etc.
+
+Inherited images are assigned as default values &mdash; you can always edit any child to select a different featured or custom image (which will then be inherited by its own children).
+
+The Inherit Parent Metadata (aka WPSSO IPM) add-on makes no permanent changes &mdash; simply deactivate the plugin to disable the inherited image feature. ;-)
 
 There is no add-on settings page for this plugin &mdash; simply *install* and *activate* the plugin.
 
