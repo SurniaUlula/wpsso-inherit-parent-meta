@@ -132,6 +132,8 @@ if ( ! class_exists( 'WpssoIpm' ) ) {
 
 		/**
 		 * Check for the minimum required WordPress version.
+		 *
+		 * If we don't have the minimum required version, then de-activate ourselves and die.
 		 */
 		public static function check_wp_version() {
 
@@ -139,9 +141,9 @@ if ( ! class_exists( 'WpssoIpm' ) ) {
 
 			if ( version_compare( $wp_version, self::$wp_min_version, '<' ) ) {
 
-				$plugin = plugin_basename( __FILE__ );
-
 				self::wpsso_init_textdomain();	// If not already loaded, load the textdomain now.
+
+				$plugin = plugin_basename( __FILE__ );
 
 				if ( ! function_exists( 'deactivate_plugins' ) ) {
 					require_once trailingslashit( ABSPATH ) . 'wp-admin/includes/plugin.php';
@@ -165,7 +167,7 @@ if ( ! class_exists( 'WpssoIpm' ) ) {
 
 			static $do_once = null;
 
-			if ( true === $do_once ) {
+			if ( null !== $do_once ) {	// Already loaded.
 				return;
 			}
 
