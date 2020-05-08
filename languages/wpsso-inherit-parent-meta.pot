@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Inherit Parent Metadata package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Inherit Parent Metadata 3.1.0-dev.4\n"
+"Project-Id-Version: WPSSO Inherit Parent Metadata 3.1.0-b.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-inherit-"
 "parent-meta\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
@@ -20,13 +20,13 @@ msgid ""
 "Post Types, Categories, Tags, and Custom Taxonomies."
 msgstr ""
 
-#: wpsso-inherit-parent-meta.php:240
+#: wpsso-inherit-parent-meta.php:241
 msgid ""
 "The %1$s version %2$s add-on requires the %3$s plugin &mdash; please "
 "activate the missing plugin."
 msgstr ""
 
-#: wpsso-inherit-parent-meta.php:243
+#: wpsso-inherit-parent-meta.php:244
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
