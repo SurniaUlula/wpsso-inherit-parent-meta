@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Organization Markup (WPSSO ORG) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Inherit Parent Meta 3.0.0\n"
+"Project-Id-Version: WPSSO Inherit Parent Meta 3.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-inherit-parent-meta\n"
-"POT-Creation-Date: 2020-05-07 14:26-0700\n"
-"PO-Revision-Date: 2020-05-07 14:28-0700\n"
+"POT-Creation-Date: 2020-05-08 08:03-0700\n"
+"PO-Revision-Date: 2020-05-08 08:04-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -20,21 +20,13 @@ msgctxt "plugin description"
 msgid "Inherit the Featured and Custom Images from Parents for Posts, Pages, Custom Post Types, Categories, Tags, and Custom Taxonomies."
 msgstr "Hérite l'image mise en avant et personnalisées des parents pour les articles, pages, types d'articles personnalisés, catégories, étiquettes, et taxonomies personnalisées."
 
-#: wpsso-inherit-parent-meta.php:206
-msgid "%1$s requires %2$s version %3$s or newer and has been deactivated."
-msgstr "%1$s nécessite %2$s version %3$s ou plus récente et a été désactivée."
-
-#: wpsso-inherit-parent-meta.php:208
-msgid "Please upgrade %1$s before trying to re-activate the %2$s plugin."
-msgstr "SVP mettre à jour %1$s avant d'essayer de réactiver l'extension %2$s."
-
-#: wpsso-inherit-parent-meta.php:258
+#: wpsso-inherit-parent-meta.php:241
 msgid "The %1$s version %2$s add-on requires the %3$s plugin &mdash; please activate the missing plugin."
-msgstr "L'ajout %1$s version %2$s requiert l'extension %2$s &mdash; veuillez activer l'extension manquante."
+msgstr "L'ajout %1$s version %2$s nécessite l'extension %3$s &mdash; veuillez activer l'extension manquante."
 
-#: wpsso-inherit-parent-meta.php:261
-msgid "The %1$s version %2$s add-on requires the %3$s version %4$s plugin or newer (version %5$s is currently installed)."
-msgstr "L'ajout %1$s version %2$s requiert l'extension %3$s version %4$s ou plus récente (la version %5$s est actuellement installée)."
+#: wpsso-inherit-parent-meta.php:244
+msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
+msgstr "L'ajout %1$s version %2$s nécessite %3$s version %4$s ou plus récente (la version %5$s est actuellement installée)."
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO Inherit Parent Metadata"
