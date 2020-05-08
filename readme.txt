@@ -74,7 +74,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.1.0-dev.4 (2020/05/07)**
+**Version 3.1.0-b.1 (2020/05/08)**
 
 * **New Features**
 	* None.
@@ -87,7 +87,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.7.
-	* WPSSO Core v7.4.0-dev.4.
+	* WPSSO Core v7.4.0-b.1.
 
 **Version 3.0.0 (2020/04/21)**
 
@@ -106,9 +106,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.1.0-dev.4 =
+= 3.1.0-b.1 =
 
-(2020/05/07) Refactored the required plugin check to (optionally) check the class name and a version constant.
+(2020/05/08) Refactored the required plugin check to (optionally) check the class name and a version constant.
 
 = 3.0.0 =
 
