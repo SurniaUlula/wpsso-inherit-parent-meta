@@ -138,9 +138,14 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 		private function get_meta_cache( $obj_id, $meta_type ) {
 
 			/**
+			 * WordPress stores data using a post, term, or user ID, along with a group string.
+			 *
+			 * Example: wp_cache_get( 1, 'user_meta' );
+			 *
 			 * Returns (bool|mixed) false on failure to retrieve contents or the cache contents on success.
 			 *
-			 * $found (bool) (Optional) whether the key was found in the cache (passed by reference). 
+			 * $found (bool) (Optional) whether the key was found  in the cache (passed by reference). Disambiguates a
+			 * return of false, a storable value. Default null.
 			 */
 			$meta_cache = wp_cache_get( $obj_id, $group = $meta_type . '_meta', $force = false, $found );
 
