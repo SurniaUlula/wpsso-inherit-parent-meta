@@ -93,7 +93,7 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 					'tc_sum_img_url'    => null,
 
 					/**
-					 * Schema JSON-LD Markup / Rich Results.
+					 * Schema JSON-LD Markup / Google Rich Results.
 					 */
 					'schema_img_max'    => null,
 					'schema_img_id'     => null,
