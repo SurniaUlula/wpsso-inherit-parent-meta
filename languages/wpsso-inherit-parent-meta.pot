@@ -20,13 +20,13 @@ msgid ""
 "Post Types, Categories, Tags, and Custom Taxonomies."
 msgstr ""
 
-#: wpsso-inherit-parent-meta.php:249
+#: wpsso-inherit-parent-meta.php:270
 msgid ""
 "The %1$s version %2$s add-on requires the %3$s plugin &mdash; please "
 "activate the missing plugin."
 msgstr ""
 
-#: wpsso-inherit-parent-meta.php:252
+#: wpsso-inherit-parent-meta.php:283
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
