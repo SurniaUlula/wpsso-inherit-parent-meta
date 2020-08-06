@@ -74,6 +74,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 3.3.0-dev.4 (2020/08/02)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Removed inheritance of the 'schema_img_url' meta data key (no longer used).
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.7.
+	* WPSSO Core v7.15.0.
+
 **Version 3.2.0 (2020/08/02)**
 
 * **New Features**
@@ -120,6 +135,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v7.3.0.
 
 == Upgrade Notice ==
+
+= 3.3.0-dev.4 =
+
+(2020/08/06) Removed inheritance of the 'schema_img_url' meta data key (no longer used).
 
 = 3.2.0 =
 
