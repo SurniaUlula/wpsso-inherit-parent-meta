@@ -179,9 +179,9 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 			add_filter( 'wpssoipm_load_lib', array( 'WpssoIpmConfig', 'load_lib' ), 10, 3 );
 		}
 
-		public static function load_lib( $ret = false, $filespec = '', $classname = '' ) {
+		public static function load_lib( $success = false, $filespec = '', $classname = '' ) {
 
-			if ( false === $ret && ! empty( $filespec ) ) {
+			if ( false === $success && ! empty( $filespec ) ) {
 
 				$file_path = WPSSOIPM_PLUGINDIR . 'lib/' . $filespec . '.php';
 
@@ -190,14 +190,16 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 					require_once $file_path;
 
 					if ( empty( $classname ) ) {
+
 						return SucomUtil::sanitize_classname( 'wpssoipm' . $filespec, $allow_underscore = false );
-					} else {
-						return $classname;
+
 					}
+
+					return $classname;
 				}
 			}
 
-			return $ret;
+			return $success;
 		}
 	}
 }
