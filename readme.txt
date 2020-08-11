@@ -74,7 +74,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.3.0-rc.1 (2020/08/11)**
+**Version 3.3.0 (2020/08/11)**
 
 Maintenance release.
 
@@ -89,60 +89,11 @@ Maintenance release.
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.7.
-	* WPSSO Core v8.0.0-rc.1.
-
-**Version 3.2.0 (2020/08/02)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Tested with WordPress v5.5.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.7.
-	* WPSSO Core v7.15.0.
-
-**Version 3.1.0 (2020/05/09)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Refactored the required plugin check to (optionally) check the class name and a version constant.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.7.
-	* WPSSO Core v7.5.0.
-
-**Version 3.0.0 (2020/04/21)**
-
-* **New Features**
-	* Added a new WPSSOIPM_POST_METADATA_KEYS constant to define an array of inherited post metadata keys.
-* **Improvements**
-	* Added the custom Pinterest image from the Document SSO metabox to the list of inherited images.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.7.
-	* WPSSO Core v7.3.0.
+	* WPSSO Core v8.0.0.
 
 == Upgrade Notice ==
 
-= 3.3.0-rc.1 =
+= 3.3.0 =
 
 (2020/08/11) Maintenance release.
-
-= 3.2.0 =
-
-(2020/08/02) Tested with WordPress v5.5.
 
