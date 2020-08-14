@@ -6,6 +6,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
+
 	die( 'These aren\'t the droids you\'re looking for.' );
 }
 
@@ -23,6 +24,7 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 			static $do_once = null;
 
 			if ( true === $do_once ) {
+
 				return;	// Stop here.
 			}
 
@@ -31,6 +33,7 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
@@ -53,13 +56,14 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 
 			/**
 			 * Do not inherit the WPSSO_META_NAME metadata array. Individual WPSSO metadata option values are handled
-			 * by the 'wpsso_get_post_options' and 'wpsso_get_term_options' filters.
+			 * by the 'wpsso_get_post_options' and 'wpsso_get_term_options' filters in $this->filter_get_md_options().
 			 */
 			static $do_inherit = array( WPSSO_META_NAME => false );
 
 			if ( isset( $do_inherit[ $meta_key ] ) ) {	// Previously checked.
 
 				if ( ! $do_inherit[ $meta_key ] ) {	// Do not inherit this metadata key.
+
 					return $meta_data;
 				}
 			}
@@ -84,6 +88,7 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 			 * If the meta already has metadata, then no need to check the parents.
 			 */
 			if ( ! empty( $meta_cache[ $meta_key ] ) ) {
+
 				return $meta_data;
 			}
 
@@ -97,8 +102,11 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 				if ( ! empty( $meta_cache[ $meta_key ] ) ) {
 
 					if ( $single ) {
+
 						return maybe_unserialize( $meta_cache[ $meta_key ][ 0 ] );
+
 					} else {
+
 						return array_map( 'maybe_unserialize', $meta_cache[ $meta_key ] );
 					}
 				}
@@ -115,6 +123,7 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 			 * Apply all the parent default options to the child's default options.
 			 */
 			if ( ! empty( $parent_opts ) ) {
+
 				$md_defs = array_merge( $md_defs, $parent_opts );
 			}
 
@@ -129,6 +138,7 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 			 * Apply all the child's custom options to the parent default options.
 			 */
 			if ( ! empty( $parent_opts ) ) {
+
 				$md_opts = array_merge( $parent_opts, $md_opts );
 			}
 
@@ -169,16 +179,22 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 			$cache_index = SucomUtil::get_mod_salt( $mod );
 
 			if ( isset( $local_cache[ $cache_index ] ) ) {
+
 				return $local_cache[ $cache_index ];
 			}
 
 			$local_cache[ $cache_index ] = array();
 
 			if ( $mod[ 'is_post' ] ) {
+
 				$parent_ids = array_reverse( get_ancestors( $mod[ 'id' ], $mod[ 'post_type' ], 'post_type' ) );
+
 			} elseif ( $mod[ 'is_term' ] ) {
+
 				$parent_ids = array_reverse( get_ancestors( $mod[ 'id' ], $mod[ 'tax_slug' ], 'taxonomy' ) );
+
 			} else {
+
 				$parent_ids = array();
 			}
 
