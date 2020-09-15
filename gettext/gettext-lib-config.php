@@ -3,4 +3,5 @@
 /**
  * Extract of translatable strings from lib/config.php.
  */
+_x( 'WPSSO Inherit Parent Metadata', 'plugin name', 'wpsso-inherit-parent-meta' );
 _x( 'Inherit the Featured and Custom Images from Parents for Posts, Pages, Custom Post Types, Categories, Tags, and Custom Taxonomies.', 'plugin description', 'wpsso-inherit-parent-meta' );
