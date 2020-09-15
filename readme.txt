@@ -74,7 +74,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.3.1-rc.1 (2020/09/15)**
+**Version 3.3.1 (2020/09/15)**
 
 * **New Features**
 	* None.
@@ -87,32 +87,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.7.
-	* WPSSO Core v8.5.0-rc.1.
-
-**Version 3.3.0 (2020/08/11)**
-
-Maintenance release.
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.7.
-	* WPSSO Core v8.4.1.
+	* WPSSO Core v8.5.0.
 
 == Upgrade Notice ==
 
-= 3.3.1-rc.1 =
+= 3.3.1 =
 
 (2020/09/15) Updated the French plugin translations.
-
-= 3.3.0 =
-
-(2020/08/11) Maintenance release.
 
