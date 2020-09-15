@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Inherit Parent Meta 3.3.0\n"
+"Project-Id-Version: WPSSO Inherit Parent Meta 3.3.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-inherit-parent-meta\n"
-"POT-Creation-Date: 2020-09-14 11:16-0700\n"
-"PO-Revision-Date: 2020-09-15 08:55-0700\n"
+"POT-Creation-Date: 2020-09-15 10:50-0700\n"
+"PO-Revision-Date: 2020-09-15 10:51-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -14,6 +14,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: gettext/gettext-lib-config.php:6
+msgctxt "plugin name"
+msgid "WPSSO Inherit Parent Metadata"
+msgstr "WPSSO hériter métadonnées des parents"
+
+#: gettext/gettext-lib-config.php:7
 msgctxt "plugin description"
 msgid "Inherit the Featured and Custom Images from Parents for Posts, Pages, Custom Post Types, Categories, Tags, and Custom Taxonomies."
 msgstr "Hérite l'image mise en avant et personnalisées des parents pour les articles, pages, types d'articles personnalisés, catégories, étiquettes, et taxonomies personnalisées."
