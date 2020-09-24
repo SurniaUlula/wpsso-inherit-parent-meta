@@ -191,7 +191,7 @@ if ( ! class_exists( 'WpssoIpm' ) ) {
 
 							SucomUtil::safe_error_log( $error_pre . ' ' . $req_info[ 'notice' ], $strip_html = true );
 						}
-			
+
 						if ( $this->p->debug->enabled ) {
 
 							$this->p->debug->log( strtolower( $req_info[ 'notice' ] ) );

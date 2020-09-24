@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoIpmRegister' ) ) {
 		public function __construct() {
 
 			register_activation_hook( WPSSOIPM_FILEPATH, array( $this, 'network_activate' ) );
-			
+
 			//register_deactivation_hook( WPSSOIPM_FILEPATH, array( $this, 'network_deactivate' ) );
 
 			if ( is_multisite() ) {
