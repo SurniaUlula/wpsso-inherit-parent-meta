@@ -40,19 +40,9 @@ if ( ! class_exists( 'WpssoIpm' ) ) {
 
 	class WpssoIpm extends WpssoAddOn {
 
-		/**
-		 * Library class object variables.
-		 */
 		public $filters;	// WpssoIpmFilters class.
-		public $reg;		// WpssoIpmRegister class.
 
-		/**
-		 * Reference Variables (config, options, modules, etc.).
-		 */
 		protected $p;
-		protected $ext   = 'wpssoipm';
-		protected $p_ext = 'ipm';
-		protected $cf    = array();
 
 		private static $instance = null;
 
