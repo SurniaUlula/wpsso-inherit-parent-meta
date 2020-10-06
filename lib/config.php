@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoipm' => array(			// Plugin acronym.
-					'version'     => '3.3.1',	// Plugin version.
+					'version'     => '3.4.0-dev.1',	// Plugin version.
 					'opt_version' => '1',		// Increment when changing default option values.
 					'short'       => 'WPSSO IPM',	// Short plugin name.
 					'name'        => 'WPSSO Inherit Parent Metadata',
