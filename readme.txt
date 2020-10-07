@@ -74,7 +74,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.4.0-dev.1 (TBD)**
+**Version 3.4.0-dev.2 (TBD)**
 
 * **New Features**
 	* None.
@@ -89,7 +89,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.7.
-	* WPSSO Core v8.8.0-dev.1.
+	* WPSSO Core v8.8.0-dev.2.
 
 **Version 3.3.1 (2020/09/15)**
 
@@ -108,7 +108,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.4.0-dev.1 =
+= 3.4.0-dev.2 =
 
 (TBD) Refactored the add-on class to extend WpssoAddOn.
 
