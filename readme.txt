@@ -74,7 +74,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.4.0-dev.4 (2020/10/12)**
+**Version 3.4.0-dev.4 (2020/10/13)**
 
 * **New Features**
 	* None.
@@ -109,7 +109,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 3.4.0-dev.4 =
 
-(2020/10/12) Refactored the add-on class to extend a new WpssoAddOn abstract class.
+(2020/10/13) Refactored the add-on class to extend a new WpssoAddOn abstract class.
 
 = 3.3.1 =
 
