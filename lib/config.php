@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoipm' => array(			// Plugin acronym.
-					'version'     => '3.4.0-dev.4',	// Plugin version.
+					'version'     => '3.4.0-dev.5',	// Plugin version.
 					'opt_version' => '1',		// Increment when changing default option values.
 					'short'       => 'WPSSO IPM',	// Short plugin name.
 					'name'        => 'WPSSO Inherit Parent Metadata',
@@ -43,7 +43,7 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '8.8.0-dev.4',
+							'min_version'   => '8.8.0-dev.5',
 						),
 					),
 
