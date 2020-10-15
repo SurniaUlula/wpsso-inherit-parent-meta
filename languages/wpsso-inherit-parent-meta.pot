@@ -33,8 +33,8 @@ msgstr ""
 #: gettext/gettext-lib-config.php:7
 msgctxt "plugin description"
 msgid ""
-"Inherit the Featured and Custom Images from Parents for Posts, Pages, Custom "
-"Post Types, Categories, Tags, and Custom Taxonomies."
+"Inherit the featured and custom images from parents for posts, pages, custom "
+"post types, categories, tags, and custom taxonomies."
 msgstr ""
 
 #. Plugin Name of the plugin/theme
@@ -47,8 +47,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Inherit the Featured and Custom Images from Parents for Posts, Pages, Custom "
-"Post Types, Categories, Tags, and Custom Taxonomies."
+"Inherit the featured and custom images from parents for posts, pages, custom "
+"post types, categories, tags, and custom taxonomies."
 msgstr ""
 
 #. Author of the plugin/theme
