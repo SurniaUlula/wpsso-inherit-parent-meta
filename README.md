@@ -2,7 +2,7 @@
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Inherit Parent Metadata</td></tr>
-<tr><th align="right" valign="top" nowrap>Summary</th><td>Inherit the Featured and Custom Images from Parents for Posts, Pages, Custom Post Types, Categories, Tags, and Custom Taxonomies.</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>Inherit the featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>3.3.1</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires PHP</th><td>5.6 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires WordPress</th><td>4.7 or newer</td></tr>
@@ -16,7 +16,7 @@
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-inherit-parent-meta/assets/icon-256x256.png"></p>
 
-<p>Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.</p>
+<p>Inherit the featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.</p>
 
 <h4>Featured Image</h4>
 
@@ -34,13 +34,11 @@
 
 <p>There is no add-on settings page for this plugin &mdash; simply <em>install</em> and <em>activate</em> the plugin.</p>
 
-<h3>Coded for Performance</h3>
-
-<p>The WPSSO IPM add-on uses the WordPress <code>wp_cache_get()</code> and <code>update_meta_cache()</code> functions for maximum performance and integrate fully with WordPress core functionality.</p>
-
 <h3>WPSSO Core Plugin Required</h3>
 
 <p>WPSSO Inherit Parent Metadata (aka WPSSO IPM) is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a>.</p>
+
+<p>WPSSO Core and its add-ons make sure your content looks great on social sites and in search results, no matter how your URLs are crawled, shared, re-shared, posted, or embedded.</p>
 
 
 <h2>Installation</h2>

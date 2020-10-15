@@ -13,13 +13,13 @@ Requires At Least: 4.7
 Tested Up To: 5.5.1
 Stable Tag: 3.3.1
 
-Inherit the Featured and Custom Images from Parents for Posts, Pages, Custom Post Types, Categories, Tags, and Custom Taxonomies.
+Inherit the featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
 
 == Description ==
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-inherit-parent-meta/assets/icon-256x256.png"></p>
 
-Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
+Inherit the featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
 
 = Featured Image =
 
@@ -37,13 +37,11 @@ The Inherit Parent Metadata (aka WPSSO IPM) add-on makes no permanent changes &m
 
 There is no add-on settings page for this plugin &mdash; simply *install* and *activate* the plugin.
 
-<h3>Coded for Performance</h3>
-
-The WPSSO IPM add-on uses the WordPress `wp_cache_get()` and `update_meta_cache()` functions for maximum performance and integrate fully with WordPress core functionality.
-
 <h3>WPSSO Core Plugin Required</h3>
 
 WPSSO Inherit Parent Metadata (aka WPSSO IPM) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
+
+WPSSO Core and its add-ons make sure your content looks great on social sites and in search results, no matter how your URLs are crawled, shared, re-shared, posted, or embedded.
 
 == Installation ==
 
