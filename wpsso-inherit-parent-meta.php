@@ -66,7 +66,7 @@ if ( ! class_exists( 'WpssoIpm' ) ) {
 			load_plugin_textdomain( 'wpsso-inherit-parent-meta', false, 'wpsso-inherit-parent-meta/languages/' );
 		}
 
-		public function init_objects( $is_admin, $doing_ajax, $doing_cron ) {
+		public function init_objects( $is_admin ) {
 
 			$this->p =& Wpsso::get_instance();
 
