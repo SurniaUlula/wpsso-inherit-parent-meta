@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.7
 Tested Up To: 5.5.1
-Stable Tag: 3.3.1
+Stable Tag: 3.4.0
 
 Inherit the featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
 
@@ -88,28 +88,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.7.
 	* WPSSO Core v8.8.0.
 
-**Version 3.3.1 (2020/09/15)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated the French plugin translations.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Moved extracted translation strings from lib/gettext-*.php files to a new gettext/ folder.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.7.
-	* WPSSO Core v8.5.0.
-
 == Upgrade Notice ==
 
 = 3.4.0 =
 
 (2020/10/17) Refactored the add-on class to extend a new WpssoAddOn abstract class.
-
-= 3.3.1 =
-
-(2020/09/15) Updated the French plugin translations.
 
