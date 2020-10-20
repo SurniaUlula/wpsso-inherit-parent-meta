@@ -125,12 +125,12 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 			/**
 			 * Define fixed constants.
 			 */
-			define( 'WPSSOIPM_FILEPATH', $plugin_file );						
+			define( 'WPSSOIPM_FILEPATH', $plugin_file );
 			define( 'WPSSOIPM_PLUGINBASE', $info[ 'base' ] );	// Example: wpsso-inherit-parent-meta/wpsso-inherit-parent-meta.php.
 			define( 'WPSSOIPM_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_file ) ) ) );
 			define( 'WPSSOIPM_PLUGINSLUG', $info[ 'slug' ] );	// Example: wpsso-inherit-parent-meta.
 			define( 'WPSSOIPM_URLPATH', trailingslashit( plugins_url( '', $plugin_file ) ) );
-			define( 'WPSSOIPM_VERSION', $info[ 'version' ] );						
+			define( 'WPSSOIPM_VERSION', $info[ 'version' ] );
 
 			/**
 			 * Define variable constants.
@@ -161,7 +161,7 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 
 			$var_const = array();
 
-			$var_const[ 'WPSSOIPM_POST_METADATA_KEYS' ] = array( '_thumbnail_id' );						
+			$var_const[ 'WPSSOIPM_POST_METADATA_KEYS' ] = array( '_thumbnail_id' );
 
 			/**
 			 * Maybe override the default constant value with a pre-defined constant value.
