@@ -14,7 +14,7 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 
 	class WpssoIpmFilters {
 
-		private $p;
+		private $p;	// Wpsso class object.
 
 		public function __construct( &$plugin ) {
 
