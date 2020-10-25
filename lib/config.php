@@ -113,7 +113,7 @@ if ( ! class_exists( 'WpssoIpmConfig' ) ) {
 			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
 
-		public static function set_constants( $plugin_file ) { 
+		public static function set_constants( $plugin_file ) {
 
 			if ( defined( 'WPSSOIPM_VERSION' ) ) {	// Define constants only once.
 
