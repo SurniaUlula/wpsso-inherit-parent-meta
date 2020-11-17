@@ -65,10 +65,7 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 				}
 			}
 
-			/**
-			 * Default WPSSOIPM_POST_METADATA_KEYS value is array( '_thumbnail_id' ).
-			 */
-			$inherit_keys = (array) SucomUtil::get_const( 'WPSSOIPM_POST_METADATA_KEYS', array() );
+			$inherit_keys = (array) SucomUtil::get_const( 'WPSSOIPM_POST_METADATA_KEYS', array( '_thumbnail_id' ) );
 
 			if ( ! in_array( $meta_key, $inherit_keys, $strict = false ) ) {
 
