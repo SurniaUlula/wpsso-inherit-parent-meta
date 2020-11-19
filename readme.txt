@@ -1,4 +1,4 @@
-=== Inherit Parent Metadata | WPSSO Add-on ===
+=== WPSSO Inherit Parent Metadata ===
 Plugin Name: WPSSO Inherit Parent Metadata
 Plugin Slug: wpsso-inherit-parent-meta
 Text Domain: wpsso-inherit-parent-meta
