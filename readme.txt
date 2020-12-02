@@ -72,6 +72,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 3.5.0 (2020/12/02)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Included the `$addon` argument for library class constructors.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.4.
+	* WPSSO Core v8.14.1.
+
 **Version 3.4.1 (2020/10/17)**
 
 * **New Features**
@@ -89,6 +104,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v8.13.0.
 
 == Upgrade Notice ==
+
+= 3.5.0 =
+
+(2020/12/02) Included the `$addon` argument for library class constructors.
 
 = 3.4.1 =
 
