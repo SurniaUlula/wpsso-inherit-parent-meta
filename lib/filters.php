@@ -15,8 +15,12 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 	class WpssoIpmFilters {
 
 		private $p;	// Wpsso class object.
+		private $a;	// WpssoIpm class object.
 
-		public function __construct( &$plugin ) {
+		/**
+		 * Instantiated by WpssoIpm->init_objects().
+		 */
+		public function __construct( &$plugin, &$addon ) {
 
 			static $do_once = null;
 
@@ -28,11 +32,7 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 			$do_once = true;
 
 			$this->p =& $plugin;
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
+			$this->a =& $addon;
 
 			add_filter( 'get_post_metadata', array( $this, 'get_post_metadata' ), 10, 4 );
 

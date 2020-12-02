@@ -14,7 +14,7 @@
  * Requires PHP: 5.6
  * Requires At Least: 4.7
  * Tested Up To: 5.6
- * Version: 3.4.1
+ * Version: 3.5.0
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -83,7 +83,7 @@ if ( ! class_exists( 'WpssoIpm' ) ) {
 				return;	// Stop here.
 			}
 
-			$this->filters = new WpssoIpmFilters( $this->p );
+			$this->filters = new WpssoIpmFilters( $this->p, $this );
 		}
 	}
 
