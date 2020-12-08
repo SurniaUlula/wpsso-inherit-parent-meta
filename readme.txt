@@ -84,7 +84,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Included the `$addon` argument for library class constructors.
 * **Requires At Least**
 	* PHP v5.6.
-	* WordPress v4.4.
+	* WordPress v4.5.
 	* WPSSO Core v8.14.1.
 
 **Version 3.4.1 (2020/10/17)**
