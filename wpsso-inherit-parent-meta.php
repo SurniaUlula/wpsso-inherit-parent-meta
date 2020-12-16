@@ -11,7 +11,7 @@
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Inherit the featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
- * Requires PHP: 5.6
+ * Requires PHP: 7.0
  * Requires At Least: 4.7
  * Tested Up To: 5.6
  * Version: 3.5.0
