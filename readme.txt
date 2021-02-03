@@ -17,9 +17,7 @@ Inherit the featured and custom images from parents for posts, pages, custom pos
 
 == Description ==
 
-<p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-inherit-parent-meta/assets/icon-256x256.png"></p>
-
-Inherit the featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
+<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-inherit-parent-meta/assets/icon-256x256.png"> Inherit the featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.</p>
 
 = Featured Image =
 
