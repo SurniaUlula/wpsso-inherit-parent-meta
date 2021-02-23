@@ -13,11 +13,11 @@ Requires At Least: 4.7
 Tested Up To: 5.6.2
 Stable Tag: 3.5.0
 
-Inherit the featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
+Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
 
 == Description ==
 
-<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-inherit-parent-meta/assets/icon-256x256.png"> Inherit the featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.</p>
+<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-inherit-parent-meta/assets/icon-256x256.png"> Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.</p>
 
 = Featured Image =
 
