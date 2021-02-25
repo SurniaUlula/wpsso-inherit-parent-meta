@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Inherit Parent Meta 3.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-inherit-parent-meta\n"
-"POT-Creation-Date: 2020-12-08 06:26-0800\n"
-"PO-Revision-Date: 2020-12-08 06:26-0800\n"
+"POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2021-02-25 08:41-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 2.4.2\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:178
@@ -28,8 +28,8 @@ msgstr "WPSSO hériter métadonnées des parents"
 
 #: gettext/gettext-lib-config.php:7
 msgctxt "plugin description"
-msgid "Inherit the featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies."
-msgstr "Hérite l'image mise en avant et personnalisées des parents pour les articles, pages, types d'articles personnalisés, catégories, étiquettes et taxonomies personnalisées."
+msgid "Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies."
+msgstr "Hérite l'image mise en avant et personnalisées des parents pour les articles, pages, types d'articles personnalisés, catégories, étiquettes, et taxonomies personnalisées."
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO Inherit Parent Metadata"
@@ -40,8 +40,8 @@ msgid "https://wpsso.com/extend/plugins/wpsso-inherit-parent-meta/"
 msgstr "https://wpsso.com/extend/plugins/wpsso-inherit-parent-meta/"
 
 #. Description of the plugin/theme
-msgid "Inherit the featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies."
-msgstr "Hérite l'image mise en avant et personnalisées des parents pour les articles, pages, types d'articles personnalisés, catégories, étiquettes et taxonomies personnalisées."
+msgid "Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies."
+msgstr "Hérite l'image mise en avant et personnalisées des parents pour les articles, pages, types d'articles personnalisés, catégories, étiquettes, et taxonomies personnalisées."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"
