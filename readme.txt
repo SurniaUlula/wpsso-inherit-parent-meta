@@ -10,7 +10,7 @@ Tags: featured, custom, inherit, images, post meta, custom field
 Contributors: jsmoriss
 Requires PHP: 7.0
 Requires At Least: 4.7
-Tested Up To: 5.6.2
+Tested Up To: 5.7
 Stable Tag: 3.5.1
 
 Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
