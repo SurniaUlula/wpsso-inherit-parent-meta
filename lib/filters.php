@@ -55,7 +55,7 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 
 			if ( ! $this->can_inherit_metadata( $meta_key ) ) {	// Uses a local cache.
 	
-				return $meta_data;
+				return $check;
 			}
 
 			if ( '' === $prev_value ) {	// No existing previous value.
@@ -68,7 +68,7 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 
 						$parent_value = maybe_unserialize( $meta_cache[ $meta_key ][ 0 ] );
 
-						if ( $meta_value == $parent_value ) {
+						if ( $meta_value == $parent_value ) {	// Allow integer to numeric string comparison.
 
 							return false;	// Do not save the meta key value.
 						}
@@ -119,10 +119,10 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 
 		public function filter_get_md_defaults( $md_defs, $mod ) {
 
-			$parent_opts = $this->get_parent_opts( $mod );
+			$parent_opts = $this->get_parent_md_opts( $mod );
 
 			/**
-			 * Apply all the parent default options to the child's default options.
+			 * Apply the parent default options to the child's default options.
 			 */
 			if ( ! empty( $parent_opts ) ) {
 
@@ -134,10 +134,10 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 
 		public function filter_get_md_options( array $md_opts, $obj_id, $mod ) {
 
-			$parent_opts = $this->get_parent_opts( $mod );
+			$parent_opts = $this->get_parent_md_opts( $mod );
 
 			/**
-			 * Apply all the child's custom options to the parent default options.
+			 * Apply the child's custom options to the parent default options.
 			 */
 			if ( ! empty( $parent_opts ) ) {
 
@@ -204,7 +204,7 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 			return $local_cache[ $meta_key ] = false;	// Remember this check.
 		}
 
-		private function get_parent_opts( $mod ) {
+		private function get_parent_md_opts( $mod ) {
 
 			static $local_cache = array();
 
@@ -238,7 +238,7 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 
 					$parent_opts = maybe_unserialize( $meta_cache[ WPSSO_META_NAME ][ 0 ] );
 
-					$parent_opts = array_intersect_key( $parent_opts, WpssoIpmConfig::$cf[ 'form' ][ 'ipm_inherit' ] );
+					$parent_opts = array_intersect_key( $parent_opts, WpssoIpmConfig::$cf[ 'form' ][ 'inherit_md_opts' ] );
 
 					$local_cache[ $cache_index ] = array_merge( $local_cache[ $cache_index ], $parent_opts );
 				}
