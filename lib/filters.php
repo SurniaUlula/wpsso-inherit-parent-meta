@@ -34,6 +34,8 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 			$this->p =& $plugin;
 			$this->a =& $addon;
 
+			add_filter( 'update_post_metadata', array( $this, 'update_post_metadata' ), 10, 5 );
+
 			add_filter( 'get_post_metadata', array( $this, 'get_post_metadata' ), 10, 4 );
 
 			/**
@@ -49,37 +51,45 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 			) );
 		}
 
-		public function get_post_metadata( $meta_data, $obj_id, $meta_key, $single ) {
+		public function update_post_metadata( $check = null, $obj_id, $meta_key, $meta_value, $prev_value ) {
 
-			/**
-			 * Do not inherit the WPSSO_META_NAME metadata array. Individual WPSSO metadata option values are handled
-			 * by the 'wpsso_get_post_options' and 'wpsso_get_term_options' filters in $this->filter_get_md_options().
-			 */
-			static $do_inherit = array( WPSSO_META_NAME => false );
-
-			if ( isset( $do_inherit[ $meta_key ] ) ) {	// Previously checked.
-
-				if ( ! $do_inherit[ $meta_key ] ) {	// Do not inherit this metadata key.
-
-					return $meta_data;
-				}
-			}
-
-			$inherit_keys = (array) SucomUtil::get_const( 'WPSSOIPM_POST_METADATA_KEYS', array( '_thumbnail_id' ) );
-
-			if ( ! in_array( $meta_key, $inherit_keys, $strict = false ) ) {
-
-				$do_inherit[ $meta_key ] = false;	// Remember this check.
-
+			if ( ! $this->can_inherit_metadata( $meta_key ) ) {	// Uses a local cache.
+	
 				return $meta_data;
 			}
 
-			$do_inherit[ $meta_key ] = true;	// Remember this check.
+			if ( '' === $prev_value ) {	// No existing previous value.
+
+				foreach ( get_post_ancestors( $obj_id ) as $parent_id ) {
+
+					$meta_cache = $this->get_meta_cache( $parent_id, 'post' );
+	
+					if ( ! empty( $meta_cache[ $meta_key ][ 0 ] ) ) {	// Parent has a meta key value.
+
+						$parent_value = maybe_unserialize( $meta_cache[ $meta_key ][ 0 ] );
+
+						if ( $meta_value == $parent_value ) {
+
+							return false;	// Do not save the meta key value.
+						}
+					}
+				}
+			}
+
+			return $check;
+		}
+
+		public function get_post_metadata( $meta_data, $obj_id, $meta_key, $single ) {
+
+			if ( ! $this->can_inherit_metadata( $meta_key ) ) {	// Uses a local cache.
+	
+				return $meta_data;
+			}
 
 			$meta_cache = $this->get_meta_cache( $obj_id, 'post' );
 
 			/**
-			 * If the meta already has metadata, then no need to check the parents.
+			 * If the meta key already has a value, then no need to check the parents.
 			 */
 			if ( ! empty( $meta_cache[ $meta_key ] ) ) {
 
@@ -87,22 +97,20 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 			}
 
 			/**
-			 * Start with the parent and work our way up - return the first metadata found.
+			 * Start with the parent and work our way up - return the first value found.
 			 */
 			foreach ( get_post_ancestors( $obj_id ) as $parent_id ) {
 
 				$meta_cache = $this->get_meta_cache( $parent_id, 'post' );
 
-				if ( ! empty( $meta_cache[ $meta_key ] ) ) {
+				if ( ! empty( $meta_cache[ $meta_key ][ 0 ] ) ) {	// Parent has a meta key value.
 
 					if ( $single ) {
 
 						return maybe_unserialize( $meta_cache[ $meta_key ][ 0 ] );
-
-					} else {
-
-						return array_map( 'maybe_unserialize', $meta_cache[ $meta_key ] );
 					}
+
+					return array_map( 'maybe_unserialize', $meta_cache[ $meta_key ] );
 				}
 			}
 
@@ -164,6 +172,36 @@ if ( ! class_exists( 'WpssoIpmFilters' ) ) {
 			}
 
 			return $meta_cache;
+		}
+
+		private function can_inherit_metadata( $meta_key ) {
+
+			/**
+			 * Never inherit the WPSSO_META_NAME metadata array.
+			 *
+			 * Individual WPSSO metadata option values are handled by the 'wpsso_get_post_options' and
+			 * 'wpsso_get_term_options' filters in $this->filter_get_md_options().
+			 */
+			static $local_cache = array( WPSSO_META_NAME => false );
+
+			if ( isset( $local_cache[ $meta_key ] ) ) {	// Previously checked.
+
+				return $local_cache[ $meta_key ];	// Return true or false.
+			}
+
+			static $inherit_keys = null;
+
+			if ( null === $inherit_keys ) {
+
+				$inherit_keys = (array) SucomUtil::get_const( 'WPSSOIPM_POST_METADATA_KEYS', array( '_thumbnail_id' ) );
+			}
+
+			if ( in_array( $meta_key, $inherit_keys, $strict = false ) ) {
+
+				return $local_cache[ $meta_key ] = true;	// Remember this check.
+			}
+
+			return $local_cache[ $meta_key ] = false;	// Remember this check.
 		}
 
 		private function get_parent_opts( $mod ) {

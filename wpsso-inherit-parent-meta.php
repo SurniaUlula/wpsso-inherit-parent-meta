@@ -13,8 +13,8 @@
  * Description: Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
  * Requires PHP: 7.0
  * Requires At Least: 4.7
- * Tested Up To: 5.6.2
- * Version: 3.5.1
+ * Tested Up To: 5.7
+ * Version: 3.6.0-dev.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
