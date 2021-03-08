@@ -68,7 +68,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.6.0-dev.1 (2021/03/08)**
+**Version 3.6.0-b.1 (2021/03/08)**
 
 * **New Features**
 	* None.
@@ -115,7 +115,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.6.0-dev.1 =
+= 3.6.0-b.1 =
 
 (2021/03/08) Added backwards compatibility with the classic editor.
 
