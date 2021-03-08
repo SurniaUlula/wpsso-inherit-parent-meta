@@ -68,6 +68,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 3.6.0-dev.1 (2021/03/08)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Added backwards compatibility with the classic editor.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.0.
+	* WordPress v4.7.
+	* WPSSO Core v8.24.0.
+
 **Version 3.5.1 (2021/02/25)**
 
 * **New Features**
@@ -98,23 +113,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.7.
 	* WPSSO Core v8.16.0.
 
-**Version 3.4.1 (2020/10/17)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Refactored the add-on class to extend a new WpssoAddOn abstract class.
-* **Bugfixes**
-	* Fixed backwards compatibility with older 'init_objects' and 'init_plugin' action arguments.
-* **Developer Notes**
-	* Added a new WpssoAddOn class in lib/abstracts/add-on.php.
-	* Added a new SucomAddOn class in lib/abstracts/com/add-on.php.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.7.
-	* WPSSO Core v8.13.0.
-
 == Upgrade Notice ==
+
+= 3.6.0-dev.1 =
+
+(2021/03/08) Added backwards compatibility with the classic editor.
 
 = 3.5.1 =
 
@@ -123,8 +126,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 3.5.0 =
 
 (2020/12/02) Included the `$addon` argument for library class constructors.
-
-= 3.4.1 =
-
-(2020/10/17) Refactored the add-on class to extend a new WpssoAddOn abstract class.
 
