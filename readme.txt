@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 7.0
 Requires At Least: 4.7
 Tested Up To: 5.7
-Stable Tag: 3.5.1
+Stable Tag: 3.6.0
 
 Inherit featured and custom images from parents for posts, pages, custom post types, categories, tags, and custom taxonomies.
 
